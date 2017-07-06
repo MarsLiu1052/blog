@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on 如琢如磨</title>
+    <link>https://marsliu1052.github.io/post/</link>
+    <description>Recent content in Posts on 如琢如磨</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en_US</language>
+    <lastBuildDate>Fri, 02 Jun 2017 10:08:35 +0100</lastBuildDate>
+    
+	<atom:link href="https://marsliu1052.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>查询103移动类型产生的冻结库存信息(GR Block Stock)</title>
+      <link>https://marsliu1052.github.io/post/%E6%9F%A5%E8%AF%A2%E7%A7%BB%E5%8A%A8%E7%B1%BB%E5%9E%8B103%E4%BA%A7%E7%94%9F%E7%9A%84%E5%86%BB%E7%BB%93%E5%BA%93%E5%AD%98%E4%BF%A1%E6%81%AFgr-block-stock/</link>
+      <pubDate>Fri, 02 Jun 2017 10:08:35 +0100</pubDate>
+      
+      <guid>https://marsliu1052.github.io/post/%E6%9F%A5%E8%AF%A2%E7%A7%BB%E5%8A%A8%E7%B1%BB%E5%9E%8B103%E4%BA%A7%E7%94%9F%E7%9A%84%E5%86%BB%E7%BB%93%E5%BA%93%E5%AD%98%E4%BF%A1%E6%81%AFgr-block-stock/</guid>
+      <description>&lt;p&gt;最近项目上由于新旧系统切换，需要查询旧系统中GR Block Stock库存情况，因此略微研究并补充了一下查询方法及相关知识，分享一下。
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>如何高效使用Tcode</title>
+      <link>https://marsliu1052.github.io/post/%E5%A6%82%E4%BD%95%E9%AB%98%E6%95%88%E4%BD%BF%E7%94%A8tcode/</link>
+      <pubDate>Thu, 02 Feb 2017 10:08:35 +0100</pubDate>
+      
+      <guid>https://marsliu1052.github.io/post/%E5%A6%82%E4%BD%95%E9%AB%98%E6%95%88%E4%BD%BF%E7%94%A8tcode/</guid>
+      <description>&lt;p&gt;命令框在那就不用多说了，这里说说这个框内如何高效使用Tcode。
+&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

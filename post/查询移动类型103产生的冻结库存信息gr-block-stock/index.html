@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en_US">
+  <head>
+  <meta charset="utf-8">
+  <meta name="generator" content="Hugo 0.24.1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+  <link rel='stylesheet' id='oswald-css'  href='https://marsliu1052.github.io/css/oswald.css' type='text/css' media='all'>
+  <link rel="stylesheet" href="https://marsliu1052.github.io/css/style.css" type='text/css' media='all'>
+  <link rel="stylesheet" href="https://marsliu1052.github.io/css/pygment.css" type='text/css' media='all'>
+
+  
+  <title>如琢如磨 - 查询103移动类型产生的冻结库存信息(GR Block Stock)</title>
+  <meta property='og:title' content="查询103移动类型产生的冻结库存信息(GR Block Stock) - 如琢如磨">
+  <meta property="og:type" content="article">
+  
+</head>
+
+  <body>
+    <div class="container">
+    <header>
+  <h1 id="site-title"><a href="https://marsliu1052.github.io/">如琢如磨</a></h1>
+  <nav id="menu">
+    <ul>
+      
+        
+          <li><a href="http://weibo.com/qifeiba2017">微博</a></li>
+        
+      
+      
+      
+      <li><a href="/categories/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0">技术文章</a></li>
+      
+      
+    </ul>
+  </nav>
+</header>
+
+    
+    <div class="contents">
+      
+<article>
+  <div class="meta">
+  <time class="date">
+    
+    Fri Jun 2 2017
+    
+  </time>
+  <div class="comments">
+    <a href="https://marsliu1052.github.io/post/%E6%9F%A5%E8%AF%A2%E7%A7%BB%E5%8A%A8%E7%B1%BB%E5%9E%8B103%E4%BA%A7%E7%94%9F%E7%9A%84%E5%86%BB%E7%BB%93%E5%BA%93%E5%AD%98%E4%BF%A1%E6%81%AFgr-block-stock/#disqus_thread">
+      <span class="disqus-comment-count" data-disqus-identifier="">
+      </span>
+      comments
+    </a>
+  </div>
+  <p class="categories">
+  
+  <a href="/categories/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0">技术文章</a>
+  
+  </p>
+  <div class="categories">
+    <img src="https://marsliu1052.github.io//css/qrcode.jpg" alt="qrcode" width="172px" height="172px"/>
+    <p> 如对本站内容满意<br/> 又不介意打赏的话 <br /> 可支付宝扫描上面二维码 <br />金额随意，以示鼓励<br />十分感谢<br /></p>
+</div>
+</div>
+
+  <div class="caption">
+    <header>
+      <h2>查询103移动类型产生的冻结库存信息(GR Block Stock)</h2>
+
+      
+      <p class="tags">
+      <strong>Tagged</strong>
+      <a href="/tags/sap ">SAP</a>
+, <a href="/tags/mm ">MM</a>
+, <a href="/tags/%E5%BA%93%E5%AD%98%E6%9F%A5%E8%AF%A2 ">库存查询</a>
+
+      </p>
+      
+
+    </header>
+    <p>最近项目上由于新旧系统切换，需要查询旧系统中GR Block Stock库存情况，因此略微研究并补充了一下查询方法及相关知识，分享一下。
+</p>
+
+<p>方法一：使用MMBE查询
+&gt; 不足：只能单个物料查询</p>
+
+<p>方法二：使用ME2N等采购订单报表查询</p>
+
+<blockquote>
+<p>要点：选择参数中需要使用“WE104”，然后将结果在表EKBE中取得相关数据再进行计算</p>
+</blockquote>
+
+<p><img src="http://blog.itpub.net/attachment/201707/6/8596059_1499309590DglH.png" alt="" /></p>
+
+<p>另外有一些延伸：</p>
+
+<ol>
+<li><p>如果是移动类型产生107的valuated GR blocked stock (一般用于票到货未到的情况), 可以在 MARC table. MARC - BWESB中查询到库存信息，或者通过<code>标准报表MB5OA</code>查询。</p></li>
+
+<li><p>如果是移动类型103产生的GR blocked stock，系统将不会更新MARD table（<code>因为MARD在更新时要求有库存地点信息，而103移动类型中不带有，所以在MARD表中可以查询到因质量冻结的库存信息</code>）。Here, you have to find the 103 movements (quantity) pending for 105 movement from MSEG or EKBE table. In short, for a PO line item, you can find the difference in quantity between 105 and 103 movement from EKBE. This will give you the GR blocked stock. (Please consider the reversals also). The info is available in MMBE report too.</p></li>
+
+<li><p>As of my knowledge, &ldquo;to be delivered&rdquo; quantity showing in ME2N report is through hard coded logic. If you dont want to consider 103 movement as delivered quantity, you may copy the program of ME2N to a z program and do the required modification or create a new z report with required logic.</p></li>
+
+<li><p>If you want to show it in ME2N itself, I would suggest to add a new field to the report by appending the structure MEREP_OUTTAB_PURCHDOC, and write the logic accordingly to excluse 103 from EKBE or MSEG table.</p></li>
+
+<li><p>The selection parameters are used to restrict / select the required PO&rsquo;s in the output. If you want to show a report with PO of open for GR (103 done, 105 not done in your case, maintain the selection parameter as shown below, in the path OLME-Reporting - maintain purchasing list - selection parameters - Define selection parameters:
+<img src="http://blog.itpub.net/attachment/201707/6/8596059_1499309603SFN9.png" alt="" /></p></li>
+</ol>
+  </div>
+</article>
+
+
+    </div>
+    
+
+    <footer id="footer">
+    <a href="#"><img src="https://marsliu1052.github.io/css/top.png" alt="qrcode" width="30px" height="30px"/></a>
+    <p>&copy; 2017 qifeiba</p>
+	<p>Done with love...</p>
+  <p>Powered by <a href="http://gohugo.io" target="_blank">Hugo</a>,</p>
+</footer>
+
+    </div>
+  </body>
+</html>
