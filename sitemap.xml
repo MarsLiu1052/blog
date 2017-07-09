@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://www.qifeiba.com/tags/index.html</loc>
+    
+    <lastmod>2017-07-09T04:51:16.760Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.qifeiba.com/categories/index.html</loc>
+    
+    <lastmod>2017-07-09T04:50:52.343Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://www.qifeiba.com/2017/07/07/SAP%E5%BA%93%E5%AD%98%E5%8E%86%E5%8F%B2%E5%BA%93%E5%AD%98%E8%A1%A8%E6%9B%B4%E6%96%B0%E9%80%BB%E8%BE%91/</loc>
     
     <lastmod>2017-07-08T09:55:00.042Z</lastmod>
@@ -54,20 +68,6 @@
     <loc>http://www.qifeiba.com/2017/07/06/git%E6%93%8D%E4%BD%9C%E5%85%A5%E9%97%A8/</loc>
     
     <lastmod>2017-07-07T15:54:46.689Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.qifeiba.com/categories/index.html</loc>
-    
-    <lastmod>2017-07-07T09:58:35.803Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.qifeiba.com/tags/index.html</loc>
-    
-    <lastmod>2017-07-07T09:58:17.706Z</lastmod>
     
   </url>
   
