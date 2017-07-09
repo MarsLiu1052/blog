@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>如琢如磨</title>
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://www.qifeiba.com/"/>
+  <updated>2017-07-08T00:05:09.536Z</updated>
+  <id>http://www.qifeiba.com/</id>
+  
+  <author>
+    <name>qifeba</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>SAP ECC6.0 IDES中client及用户名</title>
+    <link href="http://www.qifeiba.com/2017/07/08/SAP%20ECC6.0%20IDES%E5%90%84client%E5%8F%8A%E7%94%A8%E6%88%B7%E5%90%8D/"/>
+    <id>http://www.qifeiba.com/2017/07/08/SAP ECC6.0 IDES各client及用户名/</id>
+    <published>2017-07-08T01:08:35.000Z</published>
+    <updated>2017-07-08T00:05:09.536Z</updated>
+    
+    <content type="html"><![CDATA[<p>sap ides中包含了很多个client，并且提供了多个默认的用户名和密码。<br><a id="more"></a></p>
+<h3 id="用户名及密码"><a href="#用户名及密码" class="headerlink" title="用户名及密码"></a>用户名及密码</h3><p>In client 000, 001, 066, 800 user SAP* has the password 06071992. </p>
+<p>In client 000, 001, 800 user DDIC has the password 19920706. </p>
+<p>User SAPCPIC in client 000 has the password ADMIN. </p>
+<p>User EARLYWATCH in client 066 has the password SUPPORT. </p>
+<h3 id="IDES中Client用途"><a href="#IDES中Client用途" class="headerlink" title="IDES中Client用途"></a>IDES中Client用途</h3><p><strong>集团000、001、066为SAP标准集团</strong></p>
+<p>000  sap reference client , 配传输路径或者升级等</p>
+<p>001  sap sample client</p>
+<p>066  给sap提供远程监控的</p>
+<p><strong>集团800、810、811、812为IDES标准集团</strong></p>
+<p>800 IDES-ALE: Central FI Syst Frankfurt - Deutschland</p>
+<p>810 IDES-ALE: Sales System   Barcelona - Spanien</p>
+<p>811 IDES-ALE: Production     Porto - Portugal</p>
+<p>812 IDES-ALE: Warehouse      Dallas, USA</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;sap ides中包含了很多个client，并且提供了多个默认的用户名和密码。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="技术文章" scheme="http://www.qifeiba.com/categories/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/"/>
+    
+      <category term="sap" scheme="http://www.qifeiba.com/categories/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/sap/"/>
+    
+    
+      <category term="IDES" scheme="http://www.qifeiba.com/tags/IDES/"/>
+    
+      <category term="小技巧" scheme="http://www.qifeiba.com/tags/%E5%B0%8F%E6%8A%80%E5%B7%A7/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>SAP批次管理由物料级别转换到工厂级别的方法</title>
+    <link href="http://www.qifeiba.com/2017/07/08/SAP%E6%89%B9%E6%AC%A1%E7%AE%A1%E7%90%86%E7%94%B1%E7%89%A9%E6%96%99%E7%BA%A7%E5%88%AB%E8%BD%AC%E6%8D%A2%E5%88%B0%E5%B7%A5%E5%8E%82%E7%BA%A7%E5%88%AB%E7%9A%84%E6%96%B9%E6%B3%95/"/>
+    <id>http://www.qifeiba.com/2017/07/08/SAP批次管理由物料级别转换到工厂级别的方法/</id>
+    <published>2017-07-08T01:08:35.000Z</published>
+    <updated>2017-07-08T09:25:33.037Z</updated>
+    
+    <content type="html"><![CDATA[<p>SAP物料批次管理的级别共分为三个不同且不能并存的级别，由高至低分别为：client level/集团级别、material level/物料级别、plant level/工厂级别。在SAP提供的标准功能下，批次级别的调整只能由低向高转换：工厂级别–&gt;物料级别–&gt;集团级别。SAP提供的出厂状态应该是工厂级别，如果想转为物料级别，很容易做到，但需要慎重考虑，因为再想调回来就比较难了。这里提供的方法就是由物料级别向工厂级别转换的方法，方法来自SAP Notes:<br><a id="more"></a></p>
+<p><strong>Note 41715 - Resetting batch level from material to plant level</strong></p>
+<p>This type of conversion can only be made as of Release 3.1I（3.1I及以上版本可用）. Proceed as follows:</p>
+<ol>
+<li><p>For all releases lower than Release 4.5B, implement the corrections and the modification in the report RM07CHDX as described in the correction instructions.</p>
+</li>
+<li><p>Create the report ZCHTCUCH, which is specified in the attachment.</p>
+</li>
+<li><p>Run this report in the clients for which you want to reset batch level to plant level.</p>
+</li>
+<li><p>Call transaction OMCT.</p>
+</li>
+<li><p>Check whether the batch level for “Batch unique at plant level” is set.</p>
+</li>
+<li><p>Implement Notes 821891, 944278, 950540 and 1091613 if you have not already done so (or you have not imported the corresponding Support Package).</p>
+</li>
+<li><p>Execute the function “Batch Level -&gt; Conversion”.</p>
+</li>
+<li><p>Define a plant for a plant view that may be missing.</p>
+</li>
+<li><p>Always execute the report in the test mode first. Analyze the error log.</p>
+</li>
+<li><p>If no errors occur,  you can execute the report in production mode.</p>
+</li>
+<li><p>If you are working with batch long texts, first execute the report ZM07CHDX_TEXT in test mode.</p>
+</li>
+</ol>
+<p>附：</p>
+<p>ZCHTCUCH源代码：</p>
+<p>`REPORT ZCHTCUCH.<br>TABLES: TCUCH.</p>
+<p>SELECT * FROM TCUCH.<br>  IF TCUCH-KZDCH NE ‘0’.<br>      TCUCH-KZDCH = ‘0’.<br>      UPDATE TCUCH.<br>      WRITE:/ ‘TCUCH changed to plant-level’.<br>  ELSE.<br>      WRITE:/ ‘TCUCH already changed to plant-level’.<br>  ENDIF.<br>ENDSELECT.`</p>
+<p>相关程序：<br>RM07CHDX<br>RM07CHZX</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;SAP物料批次管理的级别共分为三个不同且不能并存的级别，由高至低分别为：client level/集团级别、material level/物料级别、plant level/工厂级别。在SAP提供的标准功能下，批次级别的调整只能由低向高转换：工厂级别–&amp;gt;物料级别–&amp;gt;集团级别。SAP提供的出厂状态应该是工厂级别，如果想转为物料级别，很容易做到，但需要慎重考虑，因为再想调回来就比较难了。这里提供的方法就是由物料级别向工厂级别转换的方法，方法来自SAP Notes:&lt;br&gt;
+    
+    </summary>
+    
+      <category term="技术文章" scheme="http://www.qifeiba.com/categories/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/"/>
+    
+      <category term="sap" scheme="http://www.qifeiba.com/categories/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/sap/"/>
+    
+    
+      <category term="MM" scheme="http://www.qifeiba.com/tags/MM/"/>
+    
+      <category term="批次管理" scheme="http://www.qifeiba.com/tags/%E6%89%B9%E6%AC%A1%E7%AE%A1%E7%90%86/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>获取长文本的方法</title>
+    <link href="http://www.qifeiba.com/2017/07/08/%E8%8E%B7%E5%8F%96%E9%95%BF%E6%96%87%E6%9C%AC%E7%9A%84%E6%96%B9%E6%B3%95/"/>
+    <id>http://www.qifeiba.com/2017/07/08/获取长文本的方法/</id>
+    <published>2017-07-08T01:08:35.000Z</published>
+    <updated>2017-07-08T09:42:51.022Z</updated>
+    
+    <content type="html"><![CDATA[<p>通过函数从表中读取长文本信息，例如物料、采购订单等。<br><a id="more"></a></p>
+<blockquote>
+<p>SE16：STXH  STXL  物料长文本、采购文本</p>
+<p>SE37：READ_TEXT</p>
+</blockquote>
+<p>另外还可以使用BAPI上载物料长文本：</p>
+<blockquote>
+<p>SE37：BAPI_MATERIAL_SAVEDATA</p>
+<p>Table：MATERIALLONGTEXT</p>
+<p>TEXT_ID=GRUN：Material long text</p>
+<p>TEXT_ID=BEST：PO long text.</p>
+</blockquote>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;通过函数从表中读取长文本信息，例如物料、采购订单等。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="技术文章" scheme="http://www.qifeiba.com/categories/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/"/>
+    
+      <category term="sap" scheme="http://www.qifeiba.com/categories/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/sap/"/>
+    
+    
+      <category term="table" scheme="http://www.qifeiba.com/tags/table/"/>
+    
+      <category term="abap" scheme="http://www.qifeiba.com/tags/abap/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://www.qifeiba.com/2017/07/07/hello-world/"/>
+    <id>http://www.qifeiba.com/2017/07/07/hello-world/</id>
+    <published>2017-07-07T09:13:50.019Z</published>
+    <updated>2017-07-07T15:56:38.535Z</updated>
+    
+    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
+<a id="more"></a>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;documentation&lt;/a&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;a href=&quot;https://hexo.io/docs/troubleshooting.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;troubleshooting&lt;/a&gt; or you can ask me on &lt;a href=&quot;https://github.com/hexojs/hexo/issues&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>SAP库存表更新逻辑</title>
+    <link href="http://www.qifeiba.com/2017/07/07/SAP%E5%BA%93%E5%AD%98%E5%8E%86%E5%8F%B2%E5%BA%93%E5%AD%98%E8%A1%A8%E6%9B%B4%E6%96%B0%E9%80%BB%E8%BE%91/"/>
+    <id>http://www.qifeiba.com/2017/07/07/SAP库存历史库存表更新逻辑/</id>
+    <published>2017-07-07T01:08:35.000Z</published>
+    <updated>2017-07-08T09:55:00.042Z</updated>
+    
+    <content type="html"><![CDATA[<p>记录一下常见库存表及更新逻辑。<br><a id="more"></a></p>
+<table>
+<thead>
+<tr>
+<th>库存类型</th>
+<th style="text-align:center">当前库存</th>
+<th style="text-align:right">历史库存</th>
+<th>库存金额</th>
+<th style="text-align:center">历史库存金额</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>工厂级别库存</td>
+<td style="text-align:center">MARC MBEW</td>
+<td style="text-align:right">MARCH</td>
+<td>MBEW</td>
+<td style="text-align:center">MBEWH</td>
+</tr>
+<tr>
+<td>库存地点库存</td>
+<td style="text-align:center">MARC</td>
+<td style="text-align:right">MARDH</td>
+<td>MBEW</td>
+<td style="text-align:center">MBEWH</td>
+</tr>
+<tr>
+<td>供应商寄售库存</td>
+<td style="text-align:center">MKOL</td>
+<td style="text-align:right">MKOLH</td>
+<td>MBEW</td>
+<td style="text-align:center">MBEWH</td>
+</tr>
+<tr>
+<td>客户寄售库存</td>
+<td style="text-align:center">MSKU</td>
+<td style="text-align:right">MSKUH</td>
+<td>MBEW</td>
+<td style="text-align:center">MBEWH</td>
+</tr>
+<tr>
+<td>供应商外包库存</td>
+<td style="text-align:center">MSLB</td>
+<td style="text-align:right">MSLBH</td>
+<td>MBEW</td>
+<td style="text-align:center">MBEWH</td>
+</tr>
+<tr>
+<td>销售订单库存</td>
+<td style="text-align:center">MSKA</td>
+<td style="text-align:right">MSKAH</td>
+<td>EBEW</td>
+<td style="text-align:center">EBEWH</td>
+</tr>
+<tr>
+<td>批次库存</td>
+<td style="text-align:center">MCHB</td>
+<td style="text-align:right">MCHB</td>
+<td>MBEW</td>
+<td style="text-align:center">MBEWH</td>
+</tr>
+</tbody>
+</table>
+<p><strong>以表MBEW和MBWEH为例</strong></p>
+<p>在表MBEW中，按照物料+工厂记录物料在工厂下的数量和金额；</p>
+<p>在表MBWEH中，记录历史库存，按照物料+工厂+月份记录物料特定月份在工厂下的数量和金额；</p>
+<p><strong>表MBEW和MBEWH记录的逻辑说明</strong></p>
+<p>MBEW表记录了当前的物料价格，当物料价格被重估（比如更新物料当前移动平均价）时，SAP系统会将当前价格写入MBEWH表中，而将新价格写入MBEW中。MBEWH表记录了MBEW表的历史数据，而MBEW是物料评估（Material Valuation）表。</p>
+<p>表MBEWH记录历史库存，当物料第一次发生移动时，在表MBEWH中记录上个月的库存和去年底的库存、前年底的库存，当然这条记录均为零。</p>
+<p>当物料在每个月发生第一次货物移动时，则在表MBEWH中记录该物料上个月的库存信息，当物料未发生货物移动，但发生金额变动时，也会在表MBEWH记录该物料上个月的库存信息。</p>
+<p>无论移动平均价（Moving Average Price MAP）是否有更改，MBEWH表都会更新。</p>
+<p>当前的价格总是记录在表MBEW中，当某一期间（Period）的第一项操作更新了物料数量或价值，则SAP系统会向表MBEWH写入一条记录，以第一项操作之前的余额、价格控制为标准。</p>
+<p>在MBEWH表中代表上一期间记录的数字储存在“当前期间”LFMON字段中。</p>
+<p>例：当在3期间发生第一笔过账（比如收货），则系统会在MBEWH表中的“当前期间”LFMON字段写入数字2，数量和价值更新到“总库存（Total Stock）”和“总价值（Total Value）”字段，并且等于发生在3期间的数量和价值。</p>
+<p>若在连续几个期间内未发生过账，则表MBEWH不会为每个期间创建记录。</p>
+<p><strong>表MBEW、MBEWH与MCHBH的区别：</strong></p>
+<p>MBEW：查看当前账期的移动平均价</p>
+<p>MBEWH：查看历史账期的移动平均价</p>
+<p>表MBEWH记录了所有的库存价值，而表MCHBH则只代表了未限制库存的价值。</p>
+<p>如何查看当前移动平均价：</p>
+<p>事务代码：S_P00_07000139</p>
+<p>每次物料重估后的最新移动平均价。</p>
+<p><strong>附：Note 193554</strong><br>Summary<br>As of Release 4.5, stock and valuation fields that refer to the previous period or those dating back even farther, are not stored in those tables in which the current stock data is stored (MBEW, MARD, MCHB, and so on) but in so-called history tables (MBEWH, MARDH, MCHBH, and so on.).<br>(Also compare release note for period closing as of Release 4.5)<br>These history tables can have one entry per period. The values of such an entry refer to the end of the period. For the current period, there are no entries in the history tables. An entry is not written in this history table for every period. If stock-relevant or valuation-relevant data change, the system might generate an entry in the history table.<br>Furthermore, the fields LFMON (‘Current Period (Booking period)’) and LFGJA (‘Fiscal Year of the Current Period’) in the stock tables are no longer automatically set to the current period by the period closing program. The period is only transferred to the new period during the first movement. At the same time, the relevant history entries are also generated.</p>
+<p>Example:<br>Material 4711 has a stock of 10 pieces at the end of period 01<br>In period 02, a goods receipt of 5 pieces occurs.<br>Now, an entry is added in the history table for period 01 with a stock of 10 pieces. Simultaneously, the current stock is increased to 15 pieces and the ‘Current Period’ field (LFMON) is set to 02.<br>In period 02, an additional goods receipt occurs with 2 pieces.<br>The history table is not affected by this operation since an entry already exists for period 01. The current stock is increased to 17 pieces.<br>In period 04, a goods issue of 4 pieces occurs.<br>Now, the system adds an entry for period 03 with a stock of 17 pieces in the history table. Simultaneously, the current stock is decreased to 13 pieces and the ‘Current Period’ field (LFMON) is changed from 02 to 04.<br>Since no goods movement has occurred in period 03, there is no entry for period 02 in the history table.</p>
+<p>Thus, the following applies:</p>
+<ol>
+<li><p>The stock in the stock table describes the situation since the last goods movement which changed this segment. The period of this movement appears in the fields LFMON and LFGJA. All stocks for periods which are earlier than the periods given in the fields LFMON and LFGJA relate to the current stocks and can be found in the stock tables.</p>
+</li>
+<li><p>If for a previous period n, no entry exists in the history table, then the values of this period correspond to the values of the period n+1.</p>
+</li>
+</ol>
+<p>Since the 2nd rule can be used recursively, under consideration of the two above rules the values can be determined for any periods of that period in which Release 4.5 or a higher release were implemented.</p>
+<p>Please note: Since the history tables are not created retroactively, the history entries only exist in their completed form from the time from which users work with the new period closing program. The periods for which the period closing program has run for the first time with history records are listed in the table MARV for every company code in the fields GJA_40C and MON_40C. For technical reasons it is possible that there are also entries in the history tables with an older period. Nevertheless, these entries are not available without gaps for all stocks.<br>This algorithm is also implemented in function modules MBEW_EXTEND, MARD_EXTEND and so on. These function modules are used in the standard SAP programs in order to determine the values of the previous period and to extend tables with the reference structure MBEW, MARD and so on correspondingly.</p>
+<p>If you have your own programs which use the prior-period values from the tables MARD, MBEW etc., you should call up the relevant EXTEND component after reading the data from the table. This then returns the data as though no change had taken place in the previous logic. You can then remove the prior-period values from the known fields.</p>
+<p>Additional key words<br>MBEWH, MARDH, MCHBH, stock information, previous period stock, previous month stock</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;记录一下常见库存表及更新逻辑。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="技术文章" scheme="http://www.qifeiba.com/categories/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/"/>
+    
+      <category term="sap" scheme="http://www.qifeiba.com/categories/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/sap/"/>
+    
+    
+      <category term="MM" scheme="http://www.qifeiba.com/tags/MM/"/>
+    
+      <category term="库存查询" scheme="http://www.qifeiba.com/tags/%E5%BA%93%E5%AD%98%E6%9F%A5%E8%AF%A2/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>查询103移动类型产生的冻结库存信息(GR Block Stock)</title>
+    <link href="http://www.qifeiba.com/2017/07/06/%E6%9F%A5%E8%AF%A2%E7%A7%BB%E5%8A%A8%E7%B1%BB%E5%9E%8B103%E4%BA%A7%E7%94%9F%E7%9A%84%E5%86%BB%E7%BB%93%E5%BA%93%E5%AD%98%E4%BF%A1%E6%81%AF(GR%20Block%20Stock)/"/>
+    <id>http://www.qifeiba.com/2017/07/06/查询移动类型103产生的冻结库存信息(GR Block Stock)/</id>
+    <published>2017-07-06T01:08:35.000Z</published>
+    <updated>2017-07-08T00:06:53.726Z</updated>
+    
+    <content type="html"><![CDATA[<p>最近项目上由于新旧系统切换，需要查询旧系统中GR Block Stock库存情况，因此略微研究并补充了一下查询方法及相关知识，分享一下。<br><a id="more"></a></p>
+<p>方法一：使用MMBE查询</p>
+<blockquote>
+<p>不足：只能单个物料查询</p>
+</blockquote>
+<p>方法二：使用ME2N等采购订单报表查询</p>
+<blockquote>
+<p>要点：选择参数中需要使用“WE104”，然后将结果在表EKBE中取得相关数据再进行计算</p>
+</blockquote>
+<p><img src="http://blog.itpub.net/attachment/201707/6/8596059_1499309590DglH.png" alt=""></p>
+<p>另外有一些延伸：</p>
+<ol>
+<li><p>如果是移动类型产生107的valuated GR blocked stock (一般用于票到货未到的情况), 可以在 MARC table. MARC - BWESB中查询到库存信息，或者通过<code>标准报表MB5OA</code>查询。</p>
+</li>
+<li><p>如果是移动类型103产生的GR blocked stock，系统将不会更新MARD table（<code>因为MARD在更新时要求有库存地点信息，而103移动类型中不带有，所以在MARD表中可以查询到因质量冻结的库存信息</code>）。Here, you have to find the 103 movements (quantity) pending for 105 movement from MSEG or EKBE table. In short, for a PO line item, you can find the difference in quantity between 105 and 103 movement from EKBE. This will give you the GR blocked stock. (Please consider the reversals also). The info is available in MMBE report too.</p>
+</li>
+<li><p>As of my knowledge, “to be delivered” quantity showing in ME2N report is through hard coded logic. If you dont want to consider 103 movement as delivered quantity, you may copy the program of ME2N to a z program and do the required modification or create a new z report with required logic.</p>
+</li>
+<li><p>If you want to show it in ME2N itself, I would suggest to add a new field to the report by appending the structure MEREP_OUTTAB_PURCHDOC, and write the logic accordingly to excluse 103 from EKBE or MSEG table.</p>
+</li>
+<li><p>The selection parameters are used to restrict / select the required PO’s in the output. If you want to show a report with PO of open for GR (103 done, 105 not done in your case, maintain the selection parameter as shown below, in the path OLME-Reporting - maintain purchasing list - selection parameters - Define selection parameters:<br><img src="http://blog.itpub.net/attachment/201707/6/8596059_1499309603SFN9.png" alt=""></p>
+</li>
+</ol>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;最近项目上由于新旧系统切换，需要查询旧系统中GR Block Stock库存情况，因此略微研究并补充了一下查询方法及相关知识，分享一下。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="技术文章" scheme="http://www.qifeiba.com/categories/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/"/>
+    
+      <category term="sap" scheme="http://www.qifeiba.com/categories/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/sap/"/>
+    
+    
+      <category term="MM" scheme="http://www.qifeiba.com/tags/MM/"/>
+    
+      <category term="库存查询" scheme="http://www.qifeiba.com/tags/%E5%BA%93%E5%AD%98%E6%9F%A5%E8%AF%A2/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>如何高效使用Tcode</title>
+    <link href="http://www.qifeiba.com/2017/07/06/%E5%A6%82%E4%BD%95%E9%AB%98%E6%95%88%E4%BD%BF%E7%94%A8Tcode/"/>
+    <id>http://www.qifeiba.com/2017/07/06/如何高效使用Tcode/</id>
+    <published>2017-07-06T01:08:35.000Z</published>
+    <updated>2017-07-08T09:23:23.358Z</updated>
+    
+    <content type="html"><![CDATA[<p>命令框在哪儿就不用多说了，这里说说这个框内如何高效使用Tcode。<br><a id="more"></a></p>
+<p><strong>1. 使用“/n”</strong></p>
+<p>“/n”具有多种使用方法，而且也是最常用的，具体说明如下：</p>
+<p>（1）       输入：/n</p>
+<pre><code>表示结束当前事务。注意，为保存的信息或更改将会丢失，而且系统不会有任何提示。
+</code></pre><p>（2）       输入：/nXXX （XXX=事务码/Tcode）</p>
+<pre><code>表示当前窗口对应的事务终止执行，而在该会话（窗口）中执行XXX代表的新事务。
+同样，被终止的事务下，如果有未保存的信息或更改将丢失，系统不会提示。
+</code></pre><p>（3）       输入：/nend</p>
+<pre><code>表示关闭所有会话，退出系统 (用于相应- Logoff)。
+（类似于点 SAP GUI 右上角的关闭按钮，或者菜单“系统－退出系统”）
+</code></pre><p>（4）       输入：/ns000</p>
+<pre><code>表示结束当前事务并返回开始菜单
+</code></pre><p>（5）       输入：/nex</p>
+<pre><code>表示关闭所有会话，并立即退出系统（没有警告提示）。
+（类似于用 Windows 任务管理器结束 SAP Logon 进程）    
+</code></pre><p><strong>2. 使用“/o”</strong></p>
+<p>（1）       输入：/o</p>
+<p>（2）       输入：/oXXX（XXX=事务码/Tcode）</p>
+<pre><code>表示不终止当前会话（窗口）中的事务，如果会话窗口仍旧可以打开（没有超过限制），
+那么回打开一个新的会话窗口，执行事务XXX。
+</code></pre><p><strong>3. 使用“/i”</strong></p>
+<p>（1）       输入：/i</p>
+<p>表示关闭当前会话。</p>
+<p>（2）       输入：/i1；/i2…</p>
+<pre><code>表示关闭指定的会话。
+（当某个会话被对话框锁死，无法退出时可以使用。一般出现在开发中的屏幕逻辑错误
+</code></pre><p>本文来自：E-Works ，转载请保留原文链接：<a href="http://blog.e-works.net.cn/619815/articles/252568.html" target="_blank" rel="external">http://blog.e-works.net.cn/619815/articles/252568.html</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;命令框在哪儿就不用多说了，这里说说这个框内如何高效使用Tcode。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="技术文章" scheme="http://www.qifeiba.com/categories/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/"/>
+    
+      <category term="sap" scheme="http://www.qifeiba.com/categories/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/sap/"/>
+    
+    
+      <category term="小技巧" scheme="http://www.qifeiba.com/tags/%E5%B0%8F%E6%8A%80%E5%B7%A7/"/>
+    
+      <category term="TCODE" scheme="http://www.qifeiba.com/tags/TCODE/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>git操作入门</title>
+    <link href="http://www.qifeiba.com/2017/07/06/git%E6%93%8D%E4%BD%9C%E5%85%A5%E9%97%A8/"/>
+    <id>http://www.qifeiba.com/2017/07/06/git操作入门/</id>
+    <published>2017-07-06T01:08:35.000Z</published>
+    <updated>2017-07-07T15:54:46.689Z</updated>
+    
+    <content type="html"><![CDATA[<p>最近开始使用github，下面来介绍一下最近新学的git基础操作和一些小问题解决方式，后续如有其它，将持续更新。<br><a id="more"></a></p>
+<blockquote>
+<p>申明：git不能管理空文件夹，所以文件夹内一定要有文件。</p>
+</blockquote>
+<p><strong>1. 进入目录：</strong><br>    cd</p>
+<p><strong>2. 把当前目录变成git可以管理的仓库：</strong></p>
+<pre><code>git init
+</code></pre><p><strong>3. 添加文件：</strong></p>
+<pre><code>单个文件-git add readme.txt
+
+全部文件-git add -A
+</code></pre><p><strong>4. 提交修改：</strong></p>
+<pre><code>git commit -m&quot;一定要写备注&quot;
+</code></pre><p><strong>5. (第一次连接)远程仓库关联&amp;仓库的提交：</strong></p>
+<pre><code>git remote add origin 你的仓库地址；
+
+git push -u origin master；
+</code></pre><p><strong>6. (第二次及以后连接)远程仓库的提交：</strong></p>
+<pre><code>git push
+</code></pre><p><strong>7. Github “fatal: remote origin already exists” 解决办法</strong></p>
+<pre><code>最近遇到这个问题, 可以采用直接修改config文件的方法, 
+首先, 显示隐藏文件, 进入 .git/ 目录, 
+目录下面有一个config文件, 以文本文件方式打开该文件,在后面添加
+
+[remote &quot;origin&quot;]
+url = https://github.com/xuzhezhaozhao/Cplusplus-Primer-Plus-6thE-Code-Example.git
+
+即可.
+</code></pre>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;最近开始使用github，下面来介绍一下最近新学的git基础操作和一些小问题解决方式，后续如有其它，将持续更新。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="技术文章" scheme="http://www.qifeiba.com/categories/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/"/>
+    
+    
+      <category term="小技巧" scheme="http://www.qifeiba.com/tags/%E5%B0%8F%E6%8A%80%E5%B7%A7/"/>
+    
+      <category term="git" scheme="http://www.qifeiba.com/tags/git/"/>
+    
+  </entry>
+  
+</feed>
