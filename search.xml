@@ -1,6 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[水调歌头-甲午]]></title>
+    <url>%2F2017%2F07%2F10%2F%E6%B0%B4%E8%B0%83%E6%AD%8C%E5%A4%B4-%E7%94%B2%E5%8D%88%2F</url>
+    <content type="text"><![CDATA[作者：清.梁启超 拍碎双玉斗，慷慨一何多。 满腔都是血泪，无处着悲歌。 三百年来王气，满目山河依旧，人事竟如何？ 百户尚牛酒，四塞已干戈。 千金剑，万言策，两蹉跎。 醉中呵壁自语，醒后一滂沱。 不恨年华去也，只恐少年心事，强半为销磨。 愿替众生病，稽首礼维摩。]]></content>
+      <categories>
+        <category>读书笔记</category>
+        <category>名家诗词</category>
+      </categories>
+      <tags>
+        <tag>文章收集</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[hexo常用命令]]></title>
+    <url>%2F2017%2F07%2F10%2Fhexo%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%2F</url>
+    <content type="text"><![CDATA[hexo常用的一些命令。 hexo安装及初始化npm install hexo -g #安装 npm update hexo -g #升级 hexo init #初始化 常用命令简写hexo n “我的博客” == hexo new “我的博客” #新建文章 hexo p == hexo publish hexo g == hexo generate#生成 hexo s == hexo server #启动服务预览 hexo d == hexo deploy#部署 服务器hexo server #Hexo 会监视文件变动并自动更新，您无须重启服务器。 hexo server -s #静态模式 hexo server -p 5000 #更改端口 hexo server -i 192.168.1.1 #自定义 IP hexo clean #清除缓存 网页正常情况下可以忽略此条命令 hexo g #生成静态网页 hexo d #开始部署 hexo generate #使用 Hexo 生成静态文件快速而且简单 hexo generate –watch #监视文件变动]]></content>
+      <categories>
+        <category>技术文章</category>
+        <category>hexo</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[用户及权限相关表]]></title>
+    <url>%2F2017%2F07%2F10%2F%E7%94%A8%E6%88%B7%E5%8F%8A%E6%9D%83%E9%99%90%E7%9B%B8%E5%85%B3%E8%A1%A8%2F</url>
+    <content type="text"><![CDATA[由于权限所致，经常出现没有suim却要查用户信息及其权限的情况，因此整理了一下相关表信息，以便后用。 用户信息相关表USR02：User Logon Data(包括用户名称密码,是否锁住等字段) USR21：存放用户名、人员编号及地址编号 adrp：存放人员编号、姓名描述 adcp：地址编号、地址信息 权限相关表agr_users：用户分配的角色 agr_define：角色定义信息，例如角色名称描述、对应的根角色、创建人等。 agr_hier：菜单结构信息表，可以查询到根角色包含的tcode及tcode描述。 ust04：User Profile master(用户主数据中对应的权限参数文件名)。 agr_1251：活动组的权限数据，角色具体的值信息等 agr_1252：权限的组织元素，角色中权限的组织级别]]></content>
+      <categories>
+        <category>技术文章</category>
+        <category>sap</category>
+        <category>abap</category>
+      </categories>
+      <tags>
+        <tag>table</tag>
+        <tag>权限</tag>
+        <tag>用户</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[SAP ECC6.0 IDES中client及用户名]]></title>
     <url>%2F2017%2F07%2F08%2FSAP%20ECC6.0%20IDES%E5%90%84client%E5%8F%8A%E7%94%A8%E6%88%B7%E5%90%8D%2F</url>
     <content type="text"><![CDATA[sap ides中包含了很多个client，并且提供了多个默认的用户名和密码。 用户名及密码In client 000, 001, 066, 800 user SAP* has the password 06071992. In client 000, 001, 800 user DDIC has the password 19920706. User SAPCPIC in client 000 has the password ADMIN. User EARLYWATCH in client 066 has the password SUPPORT. IDES中Client用途集团000、001、066为SAP标准集团 000 sap reference client , 配传输路径或者升级等 001 sap sample client 066 给sap提供远程监控的 集团800、810、811、812为IDES标准集团 800 IDES-ALE: Central FI Syst Frankfurt - Deutschland 810 IDES-ALE: Sales System Barcelona - Spanien 811 IDES-ALE: Production Porto - Portugal 812 IDES-ALE: Warehouse Dallas, USA]]></content>
@@ -58,16 +94,15 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[查询103移动类型产生的冻结库存信息(GR Block Stock)]]></title>
-    <url>%2F2017%2F07%2F06%2F%E6%9F%A5%E8%AF%A2%E7%A7%BB%E5%8A%A8%E7%B1%BB%E5%9E%8B103%E4%BA%A7%E7%94%9F%E7%9A%84%E5%86%BB%E7%BB%93%E5%BA%93%E5%AD%98%E4%BF%A1%E6%81%AF(GR%20Block%20Stock)%2F</url>
-    <content type="text"><![CDATA[最近项目上由于新旧系统切换，需要查询旧系统中GR Block Stock库存情况，因此略微研究并补充了一下查询方法及相关知识，分享一下。 方法一：使用MMBE查询 不足：只能单个物料查询 方法二：使用ME2N等采购订单报表查询 要点：选择参数中需要使用“WE104”，然后将结果在表EKBE中取得相关数据再进行计算 另外有一些延伸： 如果是移动类型产生107的valuated GR blocked stock (一般用于票到货未到的情况), 可以在 MARC table. MARC - BWESB中查询到库存信息，或者通过标准报表MB5OA查询。 如果是移动类型103产生的GR blocked stock，系统将不会更新MARD table（因为MARD在更新时要求有库存地点信息，而103移动类型中不带有，所以在MARD表中可以查询到因质量冻结的库存信息）。Here, you have to find the 103 movements (quantity) pending for 105 movement from MSEG or EKBE table. In short, for a PO line item, you can find the difference in quantity between 105 and 103 movement from EKBE. This will give you the GR blocked stock. (Please consider the reversals also). The info is available in MMBE report too. As of my knowledge, “to be delivered” quantity showing in ME2N report is through hard coded logic. If you dont want to consider 103 movement as delivered quantity, you may copy the program of ME2N to a z program and do the required modification or create a new z report with required logic. If you want to show it in ME2N itself, I would suggest to add a new field to the report by appending the structure MEREP_OUTTAB_PURCHDOC, and write the logic accordingly to excluse 103 from EKBE or MSEG table. The selection parameters are used to restrict / select the required PO’s in the output. If you want to show a report with PO of open for GR (103 done, 105 not done in your case, maintain the selection parameter as shown below, in the path OLME-Reporting - maintain purchasing list - selection parameters - Define selection parameters:]]></content>
+    <title><![CDATA[git操作入门]]></title>
+    <url>%2F2017%2F07%2F06%2Fgit%E6%93%8D%E4%BD%9C%E5%85%A5%E9%97%A8%2F</url>
+    <content type="text"><![CDATA[最近开始使用github，下面来介绍一下最近新学的git基础操作和一些小问题解决方式，后续如有其它，将持续更新。 申明：git不能管理空文件夹，所以文件夹内一定要有文件。 1. 进入目录： cd 2. 把当前目录变成git可以管理的仓库： git init 3. 添加文件： 单个文件-git add readme.txt 全部文件-git add -A 4. 提交修改： git commit -m&quot;一定要写备注&quot; 5. (第一次连接)远程仓库关联&amp;仓库的提交： git remote add origin 你的仓库地址； git push -u origin master； 6. (第二次及以后连接)远程仓库的提交： git push 7. Github “fatal: remote origin already exists” 解决办法 最近遇到这个问题, 可以采用直接修改config文件的方法, 首先, 显示隐藏文件, 进入 .git/ 目录, 目录下面有一个config文件, 以文本文件方式打开该文件,在后面添加 [remote &quot;origin&quot;] url = https://github.com/xuzhezhaozhao/Cplusplus-Primer-Plus-6thE-Code-Example.git 即可.]]></content>
       <categories>
         <category>技术文章</category>
-        <category>sap</category>
       </categories>
       <tags>
-        <tag>MM</tag>
-        <tag>库存查询</tag>
+        <tag>小技巧</tag>
+        <tag>git</tag>
       </tags>
   </entry>
   <entry>
@@ -84,15 +119,16 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[git操作入门]]></title>
-    <url>%2F2017%2F07%2F06%2Fgit%E6%93%8D%E4%BD%9C%E5%85%A5%E9%97%A8%2F</url>
-    <content type="text"><![CDATA[最近开始使用github，下面来介绍一下最近新学的git基础操作和一些小问题解决方式，后续如有其它，将持续更新。 申明：git不能管理空文件夹，所以文件夹内一定要有文件。 1. 进入目录： cd 2. 把当前目录变成git可以管理的仓库： git init 3. 添加文件： 单个文件-git add readme.txt 全部文件-git add -A 4. 提交修改： git commit -m&quot;一定要写备注&quot; 5. (第一次连接)远程仓库关联&amp;仓库的提交： git remote add origin 你的仓库地址； git push -u origin master； 6. (第二次及以后连接)远程仓库的提交： git push 7. Github “fatal: remote origin already exists” 解决办法 最近遇到这个问题, 可以采用直接修改config文件的方法, 首先, 显示隐藏文件, 进入 .git/ 目录, 目录下面有一个config文件, 以文本文件方式打开该文件,在后面添加 [remote &quot;origin&quot;] url = https://github.com/xuzhezhaozhao/Cplusplus-Primer-Plus-6thE-Code-Example.git 即可.]]></content>
+    <title><![CDATA[查询103移动类型产生的冻结库存信息(GR Block Stock)]]></title>
+    <url>%2F2017%2F07%2F06%2F%E6%9F%A5%E8%AF%A2%E7%A7%BB%E5%8A%A8%E7%B1%BB%E5%9E%8B103%E4%BA%A7%E7%94%9F%E7%9A%84%E5%86%BB%E7%BB%93%E5%BA%93%E5%AD%98%E4%BF%A1%E6%81%AF(GR%20Block%20Stock)%2F</url>
+    <content type="text"><![CDATA[最近项目上由于新旧系统切换，需要查询旧系统中GR Block Stock库存情况，因此略微研究并补充了一下查询方法及相关知识，分享一下。 方法一：使用MMBE查询 不足：只能单个物料查询 方法二：使用ME2N等采购订单报表查询 要点：选择参数中需要使用“WE104”，然后将结果在表EKBE中取得相关数据再进行计算 另外有一些延伸： 如果是移动类型产生107的valuated GR blocked stock (一般用于票到货未到的情况), 可以在 MARC table. MARC - BWESB中查询到库存信息，或者通过标准报表MB5OA查询。 如果是移动类型103产生的GR blocked stock，系统将不会更新MARD table（因为MARD在更新时要求有库存地点信息，而103移动类型中不带有，所以在MARD表中可以查询到因质量冻结的库存信息）。Here, you have to find the 103 movements (quantity) pending for 105 movement from MSEG or EKBE table. In short, for a PO line item, you can find the difference in quantity between 105 and 103 movement from EKBE. This will give you the GR blocked stock. (Please consider the reversals also). The info is available in MMBE report too. As of my knowledge, “to be delivered” quantity showing in ME2N report is through hard coded logic. If you dont want to consider 103 movement as delivered quantity, you may copy the program of ME2N to a z program and do the required modification or create a new z report with required logic. If you want to show it in ME2N itself, I would suggest to add a new field to the report by appending the structure MEREP_OUTTAB_PURCHDOC, and write the logic accordingly to excluse 103 from EKBE or MSEG table. The selection parameters are used to restrict / select the required PO’s in the output. If you want to show a report with PO of open for GR (103 done, 105 not done in your case, maintain the selection parameter as shown below, in the path OLME-Reporting - maintain purchasing list - selection parameters - Define selection parameters:]]></content>
       <categories>
         <category>技术文章</category>
+        <category>sap</category>
       </categories>
       <tags>
-        <tag>小技巧</tag>
-        <tag>git</tag>
+        <tag>MM</tag>
+        <tag>库存查询</tag>
       </tags>
   </entry>
 </search>
