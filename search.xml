@@ -1,6 +1,85 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[配置路径的查找方法]]></title>
+    <url>%2F2017%2F07%2F14%2F%E9%85%8D%E7%BD%AE%E8%B7%AF%E5%BE%84%E7%9A%84%E6%9F%A5%E6%89%BE%E6%96%B9%E6%B3%95%2F</url>
+    <content type="text"><![CDATA[可以通过以下几个方法进行查找配置路径： 1.数据表进行查找。SM30，输入表（T开头的表），然后选择配置。有的表系统可能会提示：没有对象维护IMG活动存在，此时我们可以在表前加V_，即V_T001L，然后再点击customzing 2.F1帮助中的小钥匙。在一个字段的F1帮助中有个小钥匙，点击就能跳转到相应的配置路径。 3.使用SQVI建立Table jion联接表CUS_ACTOBJ、CUS_IMGACT、CUS_IMGACH进行查询。]]></content>
+      <categories>
+        <category>技术文章</category>
+        <category>SAP</category>
+      </categories>
+      <tags>
+        <tag>小技巧</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[SAP-WM PA学习路径]]></title>
+    <url>%2F2017%2F07%2F14%2FSAP-WM%20PA%E5%AD%A6%E4%B9%A0%E8%B7%AF%E5%BE%84%2F</url>
+    <content type="text"><![CDATA[记录了WM各要点及对应的PA教材编号，便于学习及查找。 Topic &amp; Weighting Way(s) to attain Primary Goods Issue Processes + SCM601, SCM610,SCM630 Goods Receipt Processes ++ SCM601, SCM610,SCM630 HU and SU Management ++ SCM660, SCM631 IM-WM Interface + SCM630 Master Data Required by WM ++ SCM601, SCM630 Mobile Data Entry (Customizing) +++ SCM631 Physical Inventory + SCM630 Storage Section Determination + SCM630 Storage Type Determination ++ SCM630 Warehouse Structure + SCM630 WM Deployment Options + SCM601, SCM610,SCM631 WM Interface and Warehouse Ac ++ SCM630 WM Movement Type Determination + SCM630]]></content>
+      <categories>
+        <category>技术文章</category>
+        <category>SAP</category>
+        <category>WM</category>
+      </categories>
+      <tags>
+        <tag>WM</tag>
+        <tag>PA</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[SAP-MM常用数据表]]></title>
+    <url>%2F2017%2F07%2F14%2FSAP-MM%E5%B8%B8%E7%94%A8%E6%95%B0%E6%8D%AE%E8%A1%A8%2F</url>
+    <content type="text"><![CDATA[记录了MM模块相关的常用数据表。 数据源 表名 描述 物料主数据 MARA 常规物料数据 MARC 物料的工厂数据 MARD 物料的仓储位置数据 MARM 物料的计量单位 MARV 物料控制记录 MBEW 物料评估 MAKT 物料說明 MAST BOM 連接物料 MVKE 物料销售数据 MAPR 有关预测的物料索引 MSTA 物料主记录状态 供应商主数据 LFA1 供应商主数据 (一般地区) LFAS 供应商主数据 (增值税登记号的一般部分) LFAT 供应商主记录（税务分组） LFB1 供应商主数据 (公司代码) LFB5 供应商主数据 (催款数据) LFBK 供应商主数据 (银行细目) LFBW 供应商主记录（预扣税类型）X LFC1 供应商主数据 (业务额) LFC3 主供应商 (特殊总分类帐交易图表) LFCPR 每一步骤的功能代码参数文件 LFM1 供应商主记录购买组织数据 LFM2 供应商主文件记录: 采购数据 信息记录 EINA 采购信息记录 - 一般数据 EINE 采购信息记录 - 采购组织数据 EIPA 订购价格历史：信息记录 预留 RKPF 凭证头：预订 RESB 预定/相关需求 货源清单 EORD 采购货源清单 采购申请 EBAN 采购申请 EBKN 采购申请帐户设置 采购订单 EKBE 采购凭证历史 EKBEH 删除的PO历史记录 EKBZ 每个采购凭证的历史：交货费用 EKBZH 每个采购凭证的历史：交货费用 EKKI 采购条件索引 EKKN 采购凭证中的帐户设置 EKKO 采购凭证抬头 EKPA 采购中的合伙人规则 EKPB 采购凭证中的”已供物料”项 EKPO 采购凭证项目 EKPV 采购凭证项目的库存转储装运数据 EKRS ERS过程：将被开票的货物（商品）移动 EKAB 批准凭证 EKAN 供应商地址: 采购凭证 物料凭证 MKPF 抬头：物料凭证 MSEG 凭证段:物料 发票 RBKP 凭证表头：发票收据 RSEG 凭证项目：收款发票 配额 EQUK 配额文件: 标题 EQUP 配额文件：项目 装运 T027A 装运须知,采购 T027B 文本: 装运须知 T027C 与装运须知相符的码 T027D 依据装运须知: 文本 盘点 IKPF 抬头：实地盘存凭证 ISEG 盘点库存凭证项目 批次 MCHA 批次 MCHB 批量库存 计划协议 EKEH 计划协议批准凭证 EKEK 计划协议批准的标题数据 EKES 供应商确认 EKET 计划协议计划行 EKETH 计划协议计划: 历史表 转储 LTBK 转储请求抬头 LTBP 转储请求项目 LTAK WM转储单抬头 LTAP 转储单项目 EKUB 有关物料的库存运输单的索引 ESKN 服务包中的帐户分配 MBPR 生产仓位库存 MLAN 物料的税分类 MLGN 每一仓库号物料数据 MLGT 每一存储类型的物料数据 MVER 物料消耗量 MVKE 物料销售数据 T001L 仓储地点 T001W 工厂/分支机构 NRIV 号码范围间隔 T024 采购组 T024E 采购组织 T024W 工厂的有效采购组织 T024Z 采购组织 T023 物料组 T156 移动类型 T157H 移动类型的帮助文本 KONP 条件( 项目 ) T16FC 批准代码]]></content>
+      <categories>
+        <category>技术文章</category>
+        <category>SAP</category>
+        <category>ABAP</category>
+      </categories>
+      <tags>
+        <tag>table</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[SAP-FI常用数据表]]></title>
+    <url>%2F2017%2F07%2F14%2FSAP-FI%E5%B8%B8%E7%94%A8%E6%95%B0%E6%8D%AE%E9%80%8F%E6%98%8E%E8%A1%A8%2F</url>
+    <content type="text"><![CDATA[记录FI相关的常用数据表，以便查询。 GL部分：FAGLFLEXT 新总账汇总表 GLT0 旧总帐汇总表 SKA1 总账科目主记录 (科目表) 科目表层数据 SKAT 总帐科目主记录（科目表：说明）包括语言代码 SKB1 总帐科目主记录 (公司代码) 公司代码层数据 BKPF 财务凭证抬头 BSEG 财务凭证行项目 （会计凭证明细） BSIK, BSAK 分别是供应商(K)的未清已清项存放的表 BSIS, BSAS 分别是总账(S)的未清已清项存放的表 BSID, BSAD 分别是客户(D)的未清已清项存放的表 I 表示未清，A 表示已清。 AP部分：LFA1 供应商主数据 (一般地区) LFAS 供应商主数据 (增值税登记号的一般部分) LFB1 供应商主数据 (公司代码) LFB5 供应商主数据 (催款数据) LFBK 供应商主数据 (银行细目) LFC1 供应商主数据 (业务额) LFC3 主供应商 (特殊总分类帐交易图表) AR部分：KNA1 客户主文件的一般数据 KNAS 客户主数据（一般地区的增值税登记号） KNB1 客户主数据 (公司代码) KNB4 客户收付历史 KNB5 客户主记录 (催款数据) KNBK 客户主数据 (银行细目) KNC1 客户主记录 (交易额) KNC3 客户主数据 (特殊总帐业务额) KNKA 客户主数据信贷管理: 中心数据 KNKK 客户主数据信贷管理: 控制范围数据 货币：TCURC 货币代码 TCURT 货币代码名 TCURV 货币换算的兑换率类型 TCURR 汇率 TCURW 汇率类型的使用 TCURF 转换因子 银行：BNKA 银行主数据 T012 开户行 T012T 开户行帐户名 NBNK 银行的号码范围 业务范围：TGSB 业务范围 TGSBT 业务部门名称 T001 公司代码 T001T 公司代码相关的文本 T005 国家 T005T 国家名 T001B 允许的记帐期 过帐码：TBSL 过帐码 TBSLT 过帐代码名称]]></content>
+      <categories>
+        <category>技术文章</category>
+        <category>SAP</category>
+        <category>ABAP</category>
+      </categories>
+      <tags>
+        <tag>table</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[sap批次管理]]></title>
+    <url>%2F2017%2F07%2F12%2FSAP%E6%89%B9%E6%AC%A1%E7%AE%A1%E7%90%86%2F</url>
+    <content type="text"><![CDATA[批次管理包括的内容：主数据、批次水平、批次特性、批次状态、可用性检查、批次决定、价格决定，货架生命周期到期日、批次使用清单。 批次特性和质量管理、连续制造中的批次产生、优化批次处理、批次单位、联合批次特性和批次单位、批次管理和价格的关系、在lis系统的实际和计划值、质量管理的数据概念、质量单位转储. 1、批次创建主数据在物料主数据的采购试图等选中批次管理的按钮，可以手工创建批或者在收货的时候自动创建，批次可以是内部也可以是外部给号，位数10位，可以是字母。 如果要改变批次管理，就是这个物料有批次换成没批次或者没批次换成有批次，那么要求，以前的会计年度期末，本月和上月期末无库存。 如果批次的号码要外部给号，有特殊要求，请看用户出口，自己写程序吧。你能定义每一个移动类型，是否输入批次号码，自动还是手工，是否有检测等有8个选择。 对于连续生产，订单创建或者批次的时候，你可以定义是否产生批次，自动的批次分类是否给出，是否给定自由的特性。 2、批次水平如果是工厂物料级别，不同的工厂相同物料可以有不同的批次号码，你能在不同工厂间转储批次库存，尽管他们有不同的特性，如果你想批次特性是跨工厂的，那么这里不支持，请改变批次的设置。 如果物料级别，所有的工厂的同一个物料具有相同的特性，物料不同批次相同并且特性不同是许可的。 如果是集团级别，一个批次号码在一个集团内只能使用一次，一个号码只能分配给一个物料。 sap默认的级别是工厂级别，可以修改你可以把批次的级别升高，但降低是严格控制的，只能是从集团级别到物料级别。 3、批次特性批次用的分类的类型是022或者023。 物料和它的批必需分在相同的类里，相同的特性被使用在物料和批的类中，特性的值可以传递。 如果物料有某一个特性的值，批次的值不能超过这个物料的特性值的范围。 如果物料和批都有相同的特性，那么根据特性的控制，那么可以在批次的特性里直接看到或者看不到物料的特性的值。 特征是可以自己定义的，也可以用标准的，如货架生命周期的剩余期限。 你可以用用户出口，在创建批次的时候，自动从一个来源批决定主数据的值。 4、批次状态就是冻结和非冻结状态，在批次水平定义的时候定义了是否激活。 批次状态是在批次主数据的位置修改，系统可以自动修改状态。 其他的库存和批次状态没有关系，不考虑批次状态。 批次状态改变后，系统自动作一个物料凭证。 如果有批次决定，不是手工决定批次，那么可以和分类系统连接，让系统自动找到的批次不包括冻结状态的批次，特性标准的是lobm_zustd,当然你可以定义自己的特性。 5、可用性检查在可用性检查的时候，物料冻结或者不冻结的批次状态的物料，我们都可以认为是可用的。 如果你使用了批次状态的特性，就能区分冻结或者非冻结状态的批次。 如果你想找非冻结状态的批次，那么特征值是空的就可以了。 选择的结果，是你只考虑非冻结状态的批次。 在设置里，你可以维护可用性检查是冻结还是非冻结状态。 6、批次决定自动选择最适合的批次作为销售或者生产用，或者在没有wm的情况下，实现先进先出，或者先到期的货物先出（货架寿命周期）。 说白了，这里就是一个典型的sap的条件技术，我想要是懂采购的方案的人，到这里仔细看看，应该不难理解。 对于销售，批次可以在销售订单或者交货的时候自动决定。 一般在批次决定的时候，要用到分类的功能。系统可以按照你要求的特性值搜索批次，如果不合适，还可以继续搜索，这里就不是自动选择批次，而是在你选择最适合的批次的时候提供帮助。 在货物出库或者转储的时候，可以使用批次决定，标准系统批次决定是在线运行。对于生产出库，bom里有要求的批次的特性值，系统根据这个要求的特性值自动选择。 如果没有，那么就按照策略选择。如果批次在生产订单的时候还没有被自动选择，那么出库的时候可以决定。如果批次决定没有使用，那么在wm系统中一定要决定批次。 对于重复制造，看板，领料清单等功能，批次决定也可以使用。我习惯是使用领料清单的时候决定批次。 对于销售，首先是在销售订单的时候决定批次，如果成功，可以传输数据到交货和wm系统。如果交货的时候，批次还没有决定，那么批次分割有可能使用。 如果成功的找到了批次，那么可以传输数据到wm系统，否则就要到wm的转储单里决定批次。销售的批次决定要用到策略。 当然一般要用到分类系统，也是寻找和要求的值符合的批次，如果找不到，那么你就只能修改查找的标准，然后再执行批次决定的程序了。再wm系统里，一般用状态和货架生命周期来选择批次。 这里的批次决定是在后台运行。你可以修改选择的批次。批次决定可以使用用户出口来决定。批次分割的数据决定最大的批次建议的数量。 7、批次单位批次单位和普通单位的区别是可以修改转换率，你可以先在物料主数据里计划一个转换率，然后实际的转换率你可以在测量的基础上在批次主数据中定义。如果每一批的转换率都不一样，那么你就可以使用这个功能。批次单位可以分成2种： 1：活动成分管理。或者叫比例单位。 比如一桶里是100kg含量90％的酒精，我们通常使用的是桶，或者kg来表示酒精的数量，但客户真的要的是酒精，不是10％含量的水，但酒精的水是和酒精一起销售和管理的，实际的销售给客户的酒精我们是可以用一个简单的算式算出来的。 这个东西一般要和价格联系在一起，很明显，90％含量和80％含量的东西价格不同。一般生产的产品会有个计划的含量，如90％，那么实际的产品的含量（可能是91％）要在产品出来的时候才知道。 所有的比例单位都要先在系统里设置，然后才能使用。我们在系统中一般输入比例单位，然后系统转换成基本的单位。 我们要定义一个比例单位和基本单位的转换率。如果激活的比例我们知道，那么这个批次的激活的成分的数量我们可以通过和实际的数量计算得到。这个关系我们是在设置里设置好的，用在比例单位的特性的值里。就是前面说的计划的含量是90％。这个比例是变化的，我们用分类系统来表示，如实际的比例是91％。 这个东西是在创建批次的时候输入的。这个批次的分类被标注为s。物料主数据的90％的标准的比例，我们可以作为默认值。分类里有个特征，必须是数字。你可以给每个比例单位一个标准的价格，然后就可以按照这个价格作物料的价格评估。首先我们要对一个单独的批次估价，然后合并。 你可以激活几个成分单位的价格，然后就可以对这个物料估价，那么最后的结果就是这几个估价的和。销售的时候可以按照这个比例单位定价，交货的时候按照单独的比例计算后合并实际的总价格。这可能在矿产，钢铁等行业使用。 当然销售的价格也可以是根据几个不同的比例单位，销售的时候把他们合并计算。 比如一个矿产品里，含有铁、铜等不同的成分。当创建物料的时候，我们用计划的值，当收货后，我们用实际的值。计划的值可能和实际的平均值有微小的差异，这样我们看库存的总数和分项的时候就可能有差异，所以我们可以输入一个调整的参数。 2。产品单位，如钢铁。 我们一般是知道钢铁的总重量，如1000kg，但收货的时候，一片钢板是400，也可能是401，这个只有生产出来，或者收到货物的时候我们才知道。在我们还没有收货，不知道实际的转换的标准的时候，我们用计划的值来表示。 收货了，知道了实际的转换标准，那么就用实际的转换标准来代替计划值。使用批次单位必须要用分类系统。不同的测量单位可以有不同的价格，作为物料估价或者决定销售价格。上了产品单位后，同一个物料，批次不同需要转储的时候，系统是可以作的。 8、价格决定每个批次的物料可以有一个单独的销售价格，因此你必须创建一个单独的条件记录在销售系统中。四步骤： 在条件表里把重要的字段联合在一起， 定义条件表在价格决定的顺序， 分配给一个条件类型， 联合作为一个计算程序。 当然在条件表里你必须要有批次号码的字段。由于交货里有不同的批次，那么发票里如何显示批次价格就是问题了，你可以合并显示，也可以联合显示。 那么复制控制中一般可以选择的有g h b d。对于要对物料的单独的批次估价的，那么你就要在物料的会计视图的估计种类的地方选择x。当然相应的工厂的数据也要激活。一般这个时候，这个物料选择移动平均价格。 9、货架生命周期后面的说法是在不上wm的时候。没有批次管理，货架生命周期也能起作用。 在收货的时候就要维护数据，他不限制你的现在的功能，它决定是否你想使用它。物料主数据里的剩余货架周期和总的周期需要被维护，批次主数据的到期日也要维护。 当然如果你还可以用用户出口来维护计算周期。一般这个时候批次要在采购订单或者生产订单里确定，在采购订单里，你可以特殊的指定一个货架生命周期的最小的值作为到期日。 如果批次已经存在，那么那么你的主数据就包括了相关的信息，一般它被手工的输入，或者在收货的时候创建。 当货物收货的时候，一个检测就要发生，系统计算货架周期如20天，产品的生产日期如是2005。01。01，收货的日期是2005。01。03，那么你可以收货，否则就要根据后台设置出警告或者报错的消息。 如果批次管理的批次选择是按照货架生命周期，那么就要用到标准的特性，根据你要求的货架生命周，系统选择要求的批次。这个东西食品化学等行业会用到，我记忆中，仪征化纤的用户就有类似的要求。 10、批次清单和质量管理批次清单就是批次追踪用的，知道这个批次的物料现在在哪里，比如在那个客户哪里。 批次管理和质量管理的关系：质量管理使用检验特性来记录检验的结果，批次管理使用分类系统来记录特性值，如果这二者是相同的，那么应该建立联系，避免重复输入。 质量的特性如果维护好了，数据可以传输到批次管理里。这和批次单位联合，就能解决一个曾经非常困扰我们的难题，叫按质论价，比如钢铁行业就有这个要求。 要求如下，首先要有一个特性，这个特性必须有单个的间隔，其次，建立建议特性的时候必须参考主质量特性，再次，物料说明要建立，物料检验特性要分配给每一个主特性。 所以我们建立物料的时候，首先，要选择按照物料说明作质量检验。当检验结果输入的时候，需要的值被检验特性传输，就是从检验特性到总体的物料的特性。听说有的公司为了这个功能作了很多的开发的，是比较麻烦的事情。 批次管理的清单中，用户可能要选择看某一些特征的批次的数据，这样就可以使用这个功能，可以在后台定制好这个清单的内容，还能分权限，如大家都能看的，还是个人的。]]></content>
+      <categories>
+        <category>技术文章</category>
+        <category>SAP</category>
+        <category>MM</category>
+      </categories>
+      <tags>
+        <tag>批次管理</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[SAP号码段表及相关操作T-CODE]]></title>
+    <url>%2F2017%2F07%2F10%2FSAP%E5%8F%B7%E7%A0%81%E6%AE%B5%E8%A1%A8%E5%8F%8A%E7%9B%B8%E5%85%B3%E6%93%8D%E4%BD%9CT-CODE%2F</url>
+    <content type="text"><![CDATA[如果号码段出现异常，可以直接修改此表：NRIV。其中，销售凭证对象名：RV_BELEG 物料凭证对象名：MATBELEG 相关TCODE： FICO相关号码段维护：FBN1 SD相关号码段维护： VN01 WH相关凭证号码段： LN01 MM物料凭证号码段： OMBT 所有的号码段：SNRO/SNUM]]></content>
+      <categories>
+        <category>技术文章</category>
+        <category>SAP</category>
+        <category>ABAP</category>
+      </categories>
+      <tags>
+        <tag>table</tag>
+        <tag>号码段</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[水调歌头-甲午]]></title>
     <url>%2F2017%2F07%2F10%2F%E6%B0%B4%E8%B0%83%E6%AD%8C%E5%A4%B4-%E7%94%B2%E5%8D%88%2F</url>
     <content type="text"><![CDATA[作者：清.梁启超 拍碎双玉斗，慷慨一何多。 满腔都是血泪，无处着悲歌。 三百年来王气，满目山河依旧，人事竟如何？ 百户尚牛酒，四塞已干戈。 千金剑，万言策，两蹉跎。 醉中呵壁自语，醒后一滂沱。 不恨年华去也，只恐少年心事，强半为销磨。 愿替众生病，稽首礼维摩。]]></content>
@@ -27,8 +106,8 @@
     <content type="text"><![CDATA[由于权限所致，经常出现没有suim却要查用户信息及其权限的情况，因此整理了一下相关表信息，以便后用。 用户信息相关表USR02：User Logon Data(包括用户名称密码,是否锁住等字段) USR21：存放用户名、人员编号及地址编号 adrp：存放人员编号、姓名描述 adcp：地址编号、地址信息 权限相关表agr_users：用户分配的角色 agr_define：角色定义信息，例如角色名称描述、对应的根角色、创建人等。 agr_hier：菜单结构信息表，可以查询到根角色包含的tcode及tcode描述。 ust04：User Profile master(用户主数据中对应的权限参数文件名)。 agr_1251：活动组的权限数据，角色具体的值信息等 agr_1252：权限的组织元素，角色中权限的组织级别]]></content>
       <categories>
         <category>技术文章</category>
-        <category>sap</category>
-        <category>abap</category>
+        <category>SAP</category>
+        <category>ABAP</category>
       </categories>
       <tags>
         <tag>table</tag>
@@ -37,16 +116,16 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[SAP ECC6.0 IDES中client及用户名]]></title>
-    <url>%2F2017%2F07%2F08%2FSAP%20ECC6.0%20IDES%E5%90%84client%E5%8F%8A%E7%94%A8%E6%88%B7%E5%90%8D%2F</url>
-    <content type="text"><![CDATA[sap ides中包含了很多个client，并且提供了多个默认的用户名和密码。 用户名及密码In client 000, 001, 066, 800 user SAP* has the password 06071992. In client 000, 001, 800 user DDIC has the password 19920706. User SAPCPIC in client 000 has the password ADMIN. User EARLYWATCH in client 066 has the password SUPPORT. IDES中Client用途集团000、001、066为SAP标准集团 000 sap reference client , 配传输路径或者升级等 001 sap sample client 066 给sap提供远程监控的 集团800、810、811、812为IDES标准集团 800 IDES-ALE: Central FI Syst Frankfurt - Deutschland 810 IDES-ALE: Sales System Barcelona - Spanien 811 IDES-ALE: Production Porto - Portugal 812 IDES-ALE: Warehouse Dallas, USA]]></content>
+    <title><![CDATA[获取长文本的方法]]></title>
+    <url>%2F2017%2F07%2F08%2F%E8%8E%B7%E5%8F%96%E9%95%BF%E6%96%87%E6%9C%AC%E7%9A%84%E6%96%B9%E6%B3%95%2F</url>
+    <content type="text"><![CDATA[通过函数从表中读取长文本信息，例如物料、采购订单等。 SE16：STXH STXL 物料长文本、采购文本 SE37：READ_TEXT 另外还可以使用BAPI上载物料长文本： SE37：BAPI_MATERIAL_SAVEDATA Table：MATERIALLONGTEXT TEXT_ID=GRUN：Material long text TEXT_ID=BEST：PO long text.]]></content>
       <categories>
         <category>技术文章</category>
-        <category>sap</category>
+        <category>SAP</category>
+        <category>ABAP</category>
       </categories>
       <tags>
-        <tag>IDES</tag>
-        <tag>小技巧</tag>
+        <tag>table</tag>
       </tags>
   </entry>
   <entry>
@@ -55,24 +134,24 @@
     <content type="text"><![CDATA[SAP物料批次管理的级别共分为三个不同且不能并存的级别，由高至低分别为：client level/集团级别、material level/物料级别、plant level/工厂级别。在SAP提供的标准功能下，批次级别的调整只能由低向高转换：工厂级别–&gt;物料级别–&gt;集团级别。SAP提供的出厂状态应该是工厂级别，如果想转为物料级别，很容易做到，但需要慎重考虑，因为再想调回来就比较难了。这里提供的方法就是由物料级别向工厂级别转换的方法，方法来自SAP Notes: Note 41715 - Resetting batch level from material to plant level This type of conversion can only be made as of Release 3.1I（3.1I及以上版本可用）. Proceed as follows: For all releases lower than Release 4.5B, implement the corrections and the modification in the report RM07CHDX as described in the correction instructions. Create the report ZCHTCUCH, which is specified in the attachment. Run this report in the clients for which you want to reset batch level to plant level. Call transaction OMCT. Check whether the batch level for “Batch unique at plant level” is set. Implement Notes 821891, 944278, 950540 and 1091613 if you have not already done so (or you have not imported the corresponding Support Package). Execute the function “Batch Level -&gt; Conversion”. Define a plant for a plant view that may be missing. Always execute the report in the test mode first. Analyze the error log. If no errors occur, you can execute the report in production mode. If you are working with batch long texts, first execute the report ZM07CHDX_TEXT in test mode. 附： ZCHTCUCH源代码： `REPORT ZCHTCUCH.TABLES: TCUCH. SELECT * FROM TCUCH. IF TCUCH-KZDCH NE ‘0’. TCUCH-KZDCH = ‘0’. UPDATE TCUCH. WRITE:/ ‘TCUCH changed to plant-level’. ELSE. WRITE:/ ‘TCUCH already changed to plant-level’. ENDIF.ENDSELECT.` 相关程序：RM07CHDXRM07CHZX]]></content>
       <categories>
         <category>技术文章</category>
-        <category>sap</category>
+        <category>SAP</category>
+        <category>MM</category>
       </categories>
       <tags>
-        <tag>MM</tag>
         <tag>批次管理</tag>
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[获取长文本的方法]]></title>
-    <url>%2F2017%2F07%2F08%2F%E8%8E%B7%E5%8F%96%E9%95%BF%E6%96%87%E6%9C%AC%E7%9A%84%E6%96%B9%E6%B3%95%2F</url>
-    <content type="text"><![CDATA[通过函数从表中读取长文本信息，例如物料、采购订单等。 SE16：STXH STXL 物料长文本、采购文本 SE37：READ_TEXT 另外还可以使用BAPI上载物料长文本： SE37：BAPI_MATERIAL_SAVEDATA Table：MATERIALLONGTEXT TEXT_ID=GRUN：Material long text TEXT_ID=BEST：PO long text.]]></content>
+    <title><![CDATA[SAP ECC6.0 IDES中client及用户名]]></title>
+    <url>%2F2017%2F07%2F08%2FSAP%20ECC6.0%20IDES%E5%90%84client%E5%8F%8A%E7%94%A8%E6%88%B7%E5%90%8D%2F</url>
+    <content type="text"><![CDATA[sap ides中包含了很多个client，并且提供了多个默认的用户名和密码。 用户名及密码In client 000, 001, 066, 800 user SAP* has the password 06071992. In client 000, 001, 800 user DDIC has the password 19920706. User SAPCPIC in client 000 has the password ADMIN. User EARLYWATCH in client 066 has the password SUPPORT. IDES中Client用途集团000、001、066为SAP标准集团 000 sap reference client , 配传输路径或者升级等 001 sap sample client 066 给sap提供远程监控的 集团800、810、811、812为IDES标准集团 800 IDES-ALE: Central FI Syst Frankfurt - Deutschland 810 IDES-ALE: Sales System Barcelona - Spanien 811 IDES-ALE: Production Porto - Portugal 812 IDES-ALE: Warehouse Dallas, USA]]></content>
       <categories>
         <category>技术文章</category>
-        <category>sap</category>
+        <category>SAP</category>
       </categories>
       <tags>
-        <tag>table</tag>
-        <tag>abap</tag>
+        <tag>IDES</tag>
+        <tag>小技巧</tag>
       </tags>
   </entry>
   <entry>
@@ -86,10 +165,10 @@
     <content type="text"><![CDATA[记录一下常见库存表及更新逻辑。 库存类型 当前库存 历史库存 库存金额 历史库存金额 工厂级别库存 MARC MBEW MARCH MBEW MBEWH 库存地点库存 MARC MARDH MBEW MBEWH 供应商寄售库存 MKOL MKOLH MBEW MBEWH 客户寄售库存 MSKU MSKUH MBEW MBEWH 供应商外包库存 MSLB MSLBH MBEW MBEWH 销售订单库存 MSKA MSKAH EBEW EBEWH 批次库存 MCHB MCHB MBEW MBEWH 以表MBEW和MBWEH为例 在表MBEW中，按照物料+工厂记录物料在工厂下的数量和金额； 在表MBWEH中，记录历史库存，按照物料+工厂+月份记录物料特定月份在工厂下的数量和金额； 表MBEW和MBEWH记录的逻辑说明 MBEW表记录了当前的物料价格，当物料价格被重估（比如更新物料当前移动平均价）时，SAP系统会将当前价格写入MBEWH表中，而将新价格写入MBEW中。MBEWH表记录了MBEW表的历史数据，而MBEW是物料评估（Material Valuation）表。 表MBEWH记录历史库存，当物料第一次发生移动时，在表MBEWH中记录上个月的库存和去年底的库存、前年底的库存，当然这条记录均为零。 当物料在每个月发生第一次货物移动时，则在表MBEWH中记录该物料上个月的库存信息，当物料未发生货物移动，但发生金额变动时，也会在表MBEWH记录该物料上个月的库存信息。 无论移动平均价（Moving Average Price MAP）是否有更改，MBEWH表都会更新。 当前的价格总是记录在表MBEW中，当某一期间（Period）的第一项操作更新了物料数量或价值，则SAP系统会向表MBEWH写入一条记录，以第一项操作之前的余额、价格控制为标准。 在MBEWH表中代表上一期间记录的数字储存在“当前期间”LFMON字段中。 例：当在3期间发生第一笔过账（比如收货），则系统会在MBEWH表中的“当前期间”LFMON字段写入数字2，数量和价值更新到“总库存（Total Stock）”和“总价值（Total Value）”字段，并且等于发生在3期间的数量和价值。 若在连续几个期间内未发生过账，则表MBEWH不会为每个期间创建记录。 表MBEW、MBEWH与MCHBH的区别： MBEW：查看当前账期的移动平均价 MBEWH：查看历史账期的移动平均价 表MBEWH记录了所有的库存价值，而表MCHBH则只代表了未限制库存的价值。 如何查看当前移动平均价： 事务代码：S_P00_07000139 每次物料重估后的最新移动平均价。 附：Note 193554SummaryAs of Release 4.5, stock and valuation fields that refer to the previous period or those dating back even farther, are not stored in those tables in which the current stock data is stored (MBEW, MARD, MCHB, and so on) but in so-called history tables (MBEWH, MARDH, MCHBH, and so on.).(Also compare release note for period closing as of Release 4.5)These history tables can have one entry per period. The values of such an entry refer to the end of the period. For the current period, there are no entries in the history tables. An entry is not written in this history table for every period. If stock-relevant or valuation-relevant data change, the system might generate an entry in the history table.Furthermore, the fields LFMON (‘Current Period (Booking period)’) and LFGJA (‘Fiscal Year of the Current Period’) in the stock tables are no longer automatically set to the current period by the period closing program. The period is only transferred to the new period during the first movement. At the same time, the relevant history entries are also generated. Example:Material 4711 has a stock of 10 pieces at the end of period 01In period 02, a goods receipt of 5 pieces occurs.Now, an entry is added in the history table for period 01 with a stock of 10 pieces. Simultaneously, the current stock is increased to 15 pieces and the ‘Current Period’ field (LFMON) is set to 02.In period 02, an additional goods receipt occurs with 2 pieces.The history table is not affected by this operation since an entry already exists for period 01. The current stock is increased to 17 pieces.In period 04, a goods issue of 4 pieces occurs.Now, the system adds an entry for period 03 with a stock of 17 pieces in the history table. Simultaneously, the current stock is decreased to 13 pieces and the ‘Current Period’ field (LFMON) is changed from 02 to 04.Since no goods movement has occurred in period 03, there is no entry for period 02 in the history table. Thus, the following applies: The stock in the stock table describes the situation since the last goods movement which changed this segment. The period of this movement appears in the fields LFMON and LFGJA. All stocks for periods which are earlier than the periods given in the fields LFMON and LFGJA relate to the current stocks and can be found in the stock tables. If for a previous period n, no entry exists in the history table, then the values of this period correspond to the values of the period n+1. Since the 2nd rule can be used recursively, under consideration of the two above rules the values can be determined for any periods of that period in which Release 4.5 or a higher release were implemented. Please note: Since the history tables are not created retroactively, the history entries only exist in their completed form from the time from which users work with the new period closing program. The periods for which the period closing program has run for the first time with history records are listed in the table MARV for every company code in the fields GJA_40C and MON_40C. For technical reasons it is possible that there are also entries in the history tables with an older period. Nevertheless, these entries are not available without gaps for all stocks.This algorithm is also implemented in function modules MBEW_EXTEND, MARD_EXTEND and so on. These function modules are used in the standard SAP programs in order to determine the values of the previous period and to extend tables with the reference structure MBEW, MARD and so on correspondingly. If you have your own programs which use the prior-period values from the tables MARD, MBEW etc., you should call up the relevant EXTEND component after reading the data from the table. This then returns the data as though no change had taken place in the previous logic. You can then remove the prior-period values from the known fields. Additional key wordsMBEWH, MARDH, MCHBH, stock information, previous period stock, previous month stock]]></content>
       <categories>
         <category>技术文章</category>
-        <category>sap</category>
+        <category>SAP</category>
+        <category>MM</category>
       </categories>
       <tags>
-        <tag>MM</tag>
         <tag>库存查询</tag>
       </tags>
   </entry>
@@ -106,29 +185,29 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[如何高效使用Tcode]]></title>
-    <url>%2F2017%2F07%2F06%2F%E5%A6%82%E4%BD%95%E9%AB%98%E6%95%88%E4%BD%BF%E7%94%A8Tcode%2F</url>
-    <content type="text"><![CDATA[命令框在哪儿就不用多说了，这里说说这个框内如何高效使用Tcode。 1. 使用“/n” “/n”具有多种使用方法，而且也是最常用的，具体说明如下： （1） 输入：/n 表示结束当前事务。注意，为保存的信息或更改将会丢失，而且系统不会有任何提示。 （2） 输入：/nXXX （XXX=事务码/Tcode） 表示当前窗口对应的事务终止执行，而在该会话（窗口）中执行XXX代表的新事务。 同样，被终止的事务下，如果有未保存的信息或更改将丢失，系统不会提示。 （3） 输入：/nend 表示关闭所有会话，退出系统 (用于相应- Logoff)。 （类似于点 SAP GUI 右上角的关闭按钮，或者菜单“系统－退出系统”） （4） 输入：/ns000 表示结束当前事务并返回开始菜单 （5） 输入：/nex 表示关闭所有会话，并立即退出系统（没有警告提示）。 （类似于用 Windows 任务管理器结束 SAP Logon 进程） 2. 使用“/o” （1） 输入：/o （2） 输入：/oXXX（XXX=事务码/Tcode） 表示不终止当前会话（窗口）中的事务，如果会话窗口仍旧可以打开（没有超过限制）， 那么回打开一个新的会话窗口，执行事务XXX。 3. 使用“/i” （1） 输入：/i 表示关闭当前会话。 （2） 输入：/i1；/i2… 表示关闭指定的会话。 （当某个会话被对话框锁死，无法退出时可以使用。一般出现在开发中的屏幕逻辑错误 本文来自：E-Works ，转载请保留原文链接：http://blog.e-works.net.cn/619815/articles/252568.html]]></content>
-      <categories>
-        <category>技术文章</category>
-        <category>sap</category>
-      </categories>
-      <tags>
-        <tag>小技巧</tag>
-        <tag>TCODE</tag>
-      </tags>
-  </entry>
-  <entry>
     <title><![CDATA[查询103移动类型产生的冻结库存信息(GR Block Stock)]]></title>
     <url>%2F2017%2F07%2F06%2F%E6%9F%A5%E8%AF%A2%E7%A7%BB%E5%8A%A8%E7%B1%BB%E5%9E%8B103%E4%BA%A7%E7%94%9F%E7%9A%84%E5%86%BB%E7%BB%93%E5%BA%93%E5%AD%98%E4%BF%A1%E6%81%AF(GR%20Block%20Stock)%2F</url>
     <content type="text"><![CDATA[最近项目上由于新旧系统切换，需要查询旧系统中GR Block Stock库存情况，因此略微研究并补充了一下查询方法及相关知识，分享一下。 方法一：使用MMBE查询 不足：只能单个物料查询 方法二：使用ME2N等采购订单报表查询 要点：选择参数中需要使用“WE104”，然后将结果在表EKBE中取得相关数据再进行计算 另外有一些延伸： 如果是移动类型产生107的valuated GR blocked stock (一般用于票到货未到的情况), 可以在 MARC table. MARC - BWESB中查询到库存信息，或者通过标准报表MB5OA查询。 如果是移动类型103产生的GR blocked stock，系统将不会更新MARD table（因为MARD在更新时要求有库存地点信息，而103移动类型中不带有，所以在MARD表中可以查询到因质量冻结的库存信息）。Here, you have to find the 103 movements (quantity) pending for 105 movement from MSEG or EKBE table. In short, for a PO line item, you can find the difference in quantity between 105 and 103 movement from EKBE. This will give you the GR blocked stock. (Please consider the reversals also). The info is available in MMBE report too. As of my knowledge, “to be delivered” quantity showing in ME2N report is through hard coded logic. If you dont want to consider 103 movement as delivered quantity, you may copy the program of ME2N to a z program and do the required modification or create a new z report with required logic. If you want to show it in ME2N itself, I would suggest to add a new field to the report by appending the structure MEREP_OUTTAB_PURCHDOC, and write the logic accordingly to excluse 103 from EKBE or MSEG table. The selection parameters are used to restrict / select the required PO’s in the output. If you want to show a report with PO of open for GR (103 done, 105 not done in your case, maintain the selection parameter as shown below, in the path OLME-Reporting - maintain purchasing list - selection parameters - Define selection parameters:]]></content>
       <categories>
         <category>技术文章</category>
-        <category>sap</category>
+        <category>SAP</category>
+        <category>MM</category>
       </categories>
       <tags>
-        <tag>MM</tag>
         <tag>库存查询</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[如何高效使用Tcode]]></title>
+    <url>%2F2017%2F07%2F06%2F%E5%A6%82%E4%BD%95%E9%AB%98%E6%95%88%E4%BD%BF%E7%94%A8Tcode%2F</url>
+    <content type="text"><![CDATA[命令框在哪儿就不用多说了，这里说说这个框内如何高效使用Tcode。 1. 使用“/n” “/n”具有多种使用方法，而且也是最常用的，具体说明如下： （1） 输入：/n 表示结束当前事务。注意，为保存的信息或更改将会丢失，而且系统不会有任何提示。 （2） 输入：/nXXX （XXX=事务码/Tcode） 表示当前窗口对应的事务终止执行，而在该会话（窗口）中执行XXX代表的新事务。 同样，被终止的事务下，如果有未保存的信息或更改将丢失，系统不会提示。 （3） 输入：/nend 表示关闭所有会话，退出系统 (用于相应- Logoff)。 （类似于点 SAP GUI 右上角的关闭按钮，或者菜单“系统－退出系统”） （4） 输入：/ns000 表示结束当前事务并返回开始菜单 （5） 输入：/nex 表示关闭所有会话，并立即退出系统（没有警告提示）。 （类似于用 Windows 任务管理器结束 SAP Logon 进程） 2. 使用“/o” （1） 输入：/o （2） 输入：/oXXX（XXX=事务码/Tcode） 表示不终止当前会话（窗口）中的事务，如果会话窗口仍旧可以打开（没有超过限制）， 那么回打开一个新的会话窗口，执行事务XXX。 3. 使用“/i” （1） 输入：/i 表示关闭当前会话。 （2） 输入：/i1；/i2… 表示关闭指定的会话。 （当某个会话被对话框锁死，无法退出时可以使用。一般出现在开发中的屏幕逻辑错误 本文来自：E-Works ，转载请保留原文链接：http://blog.e-works.net.cn/619815/articles/252568.html]]></content>
+      <categories>
+        <category>技术文章</category>
+        <category>SAP</category>
+      </categories>
+      <tags>
+        <tag>小技巧</tag>
+        <tag>TCODE</tag>
       </tags>
   </entry>
 </search>

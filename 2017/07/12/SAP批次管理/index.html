@@ -1,0 +1,1207 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="批次管理," />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="如琢如磨" type="application/atom+xml" />
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.1" />
+
+
+
+
+
+
+<meta name="description" content="批次管理包括的内容：主数据、批次水平、批次特性、批次状态、可用性检查、批次决定、价格决定，货架生命周期到期日、批次使用清单。">
+<meta name="keywords" content="批次管理">
+<meta property="og:type" content="article">
+<meta property="og:title" content="sap批次管理">
+<meta property="og:url" content="http://www.qifeiba.com/2017/07/12/SAP批次管理/index.html">
+<meta property="og:site_name" content="如琢如磨">
+<meta property="og:description" content="批次管理包括的内容：主数据、批次水平、批次特性、批次状态、可用性检查、批次决定、价格决定，货架生命周期到期日、批次使用清单。">
+<meta property="og:updated_time" content="2017-07-14T10:08:31.776Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="sap批次管理">
+<meta name="twitter:description" content="批次管理包括的内容：主数据、批次水平、批次特性、批次状态、可用性检查、批次决定、价格决定，货架生命周期到期日、批次使用清单。">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Mist',
+    sidebar: {"position":"left","display":"post","offset":12,"offset_float":0,"b2t":false,"scrollpercent":true},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://www.qifeiba.com/2017/07/12/SAP批次管理/"/>
+
+
+
+
+
+  <title>sap批次管理 | 如琢如磨</title>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">如琢如磨</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off"
+             placeholder="搜索..." spellcheck="false"
+             type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://www.qifeiba.com/2017/07/12/SAP批次管理/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="qifeba">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="如琢如磨">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">sap批次管理</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-07-12T21:45:46+08:00">
+                2017-07-12
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/技术文章/" itemprop="url" rel="index">
+                    <span itemprop="name">技术文章</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/技术文章/SAP/" itemprop="url" rel="index">
+                    <span itemprop="name">SAP</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/技术文章/SAP/MM/" itemprop="url" rel="index">
+                    <span itemprop="name">MM</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>批次管理包括的内容：主数据、批次水平、批次特性、批次状态、可用性检查、批次决定、价格决定，货架生命周期到期日、批次使用清单。<br><a id="more"></a></p>
+<p>批次特性和质量管理、连续制造中的批次产生、优化批次处理、批次单位、联合批次特性和批次单位、批次管理和价格的关系、在lis系统的实际和计划值、质量管理的数据概念、质量单位转储.</p>
+<h2 id="1、批次创建"><a href="#1、批次创建" class="headerlink" title="1、批次创建"></a>1、批次创建</h2><p>主数据在物料主数据的采购试图等选中批次管理的按钮，可以手工创建批或者在收货的时候自动创建，批次可以是内部也可以是外部给号，位数10位，可以是字母。</p>
+<p>如果要改变批次管理，就是这个物料有批次换成没批次或者没批次换成有批次，那么要求，以前的会计年度期末，本月和上月期末无库存。</p>
+<p>如果批次的号码要外部给号，有特殊要求，请看用户出口，自己写程序吧。你能定义每一个移动类型，是否输入批次号码，自动还是手工，是否有检测等有8个选择。</p>
+<p>对于连续生产，订单创建或者批次的时候，你可以定义是否产生批次，自动的批次分类是否给出，是否给定自由的特性。</p>
+<h2 id="2、批次水平"><a href="#2、批次水平" class="headerlink" title="2、批次水平"></a>2、批次水平</h2><p>如果是工厂物料级别，不同的工厂相同物料可以有不同的批次号码，你能在不同工厂间转储批次库存，尽管他们有不同的特性，如果你想批次特性是跨工厂的，那么这里不支持，请改变批次的设置。</p>
+<p>如果物料级别，所有的工厂的同一个物料具有相同的特性，物料不同批次相同并且特性不同是许可的。</p>
+<p>如果是集团级别，一个批次号码在一个集团内只能使用一次，一个号码只能分配给一个物料。</p>
+<p>sap默认的级别是工厂级别，可以修改你可以把批次的级别升高，但降低是严格控制的，只能是从集团级别到物料级别。</p>
+<h2 id="3、批次特性"><a href="#3、批次特性" class="headerlink" title="3、批次特性"></a>3、批次特性</h2><p>批次用的分类的类型是022或者023。</p>
+<p>物料和它的批必需分在相同的类里，相同的特性被使用在物料和批的类中，特性的值可以传递。</p>
+<p>如果物料有某一个特性的值，批次的值不能超过这个物料的特性值的范围。</p>
+<p>如果物料和批都有相同的特性，那么根据特性的控制，那么可以在批次的特性里直接看到或者看不到物料的特性的值。</p>
+<p>特征是可以自己定义的，也可以用标准的，如货架生命周期的剩余期限。</p>
+<p>你可以用用户出口，在创建批次的时候，自动从一个来源批决定主数据的值。</p>
+<h2 id="4、批次状态"><a href="#4、批次状态" class="headerlink" title="4、批次状态"></a>4、批次状态</h2><p>就是冻结和非冻结状态，在批次水平定义的时候定义了是否激活。</p>
+<p>批次状态是在批次主数据的位置修改，系统可以自动修改状态。</p>
+<p>其他的库存和批次状态没有关系，不考虑批次状态。</p>
+<p>批次状态改变后，系统自动作一个物料凭证。</p>
+<p>如果有批次决定，不是手工决定批次，那么可以和分类系统连接，让系统自动找到的批次不包括冻结状态的批次，特性标准的是lobm_zustd,当然你可以定义自己的特性。</p>
+<h2 id="5、可用性检查"><a href="#5、可用性检查" class="headerlink" title="5、可用性检查"></a>5、可用性检查</h2><p>在可用性检查的时候，物料冻结或者不冻结的批次状态的物料，我们都可以认为是可用的。</p>
+<p>如果你使用了批次状态的特性，就能区分冻结或者非冻结状态的批次。</p>
+<p>如果你想找非冻结状态的批次，那么特征值是空的就可以了。</p>
+<p>选择的结果，是你只考虑非冻结状态的批次。</p>
+<p>在设置里，你可以维护可用性检查是冻结还是非冻结状态。</p>
+<h2 id="6、批次决定"><a href="#6、批次决定" class="headerlink" title="6、批次决定"></a>6、批次决定</h2><p>自动选择最适合的批次作为销售或者生产用，或者在没有wm的情况下，实现先进先出，或者先到期的货物先出（货架寿命周期）。</p>
+<p>说白了，这里就是一个典型的sap的条件技术，我想要是懂采购的方案的人，到这里仔细看看，应该不难理解。</p>
+<p>对于销售，批次可以在销售订单或者交货的时候自动决定。</p>
+<p>一般在批次决定的时候，要用到分类的功能。系统可以按照你要求的特性值搜索批次，如果不合适，还可以继续搜索，这里就不是自动选择批次，而是在你选择最适合的批次的时候提供帮助。</p>
+<p>在货物出库或者转储的时候，可以使用批次决定，标准系统批次决定是在线运行。对于生产出库，bom里有要求的批次的特性值，系统根据这个要求的特性值自动选择。</p>
+<p>如果没有，那么就按照策略选择。如果批次在生产订单的时候还没有被自动选择，那么出库的时候可以决定。如果批次决定没有使用，那么在wm系统中一定要决定批次。</p>
+<p>对于重复制造，看板，领料清单等功能，批次决定也可以使用。我习惯是使用领料清单的时候决定批次。</p>
+<p>对于销售，首先是在销售订单的时候决定批次，如果成功，可以传输数据到交货和wm系统。如果交货的时候，批次还没有决定，那么批次分割有可能使用。</p>
+<p>如果成功的找到了批次，那么可以传输数据到wm系统，否则就要到wm的转储单里决定批次。销售的批次决定要用到策略。</p>
+<p>当然一般要用到分类系统，也是寻找和要求的值符合的批次，如果找不到，那么你就只能修改查找的标准，然后再执行批次决定的程序了。再wm系统里，一般用状态和货架生命周期来选择批次。</p>
+<p>这里的批次决定是在后台运行。你可以修改选择的批次。批次决定可以使用用户出口来决定。批次分割的数据决定最大的批次建议的数量。</p>
+<h2 id="7、批次单位"><a href="#7、批次单位" class="headerlink" title="7、批次单位"></a>7、批次单位</h2><p>批次单位和普通单位的区别是可以修改转换率，你可以先在物料主数据里计划一个转换率，然后实际的转换率你可以在测量的基础上在批次主数据中定义。如果每一批的转换率都不一样，那么你就可以使用这个功能。批次单位可以分成2种：</p>
+<p>1：活动成分管理。或者叫比例单位。</p>
+<p>比如一桶里是100kg含量90％的酒精，我们通常使用的是桶，或者kg来表示酒精的数量，但客户真的要的是酒精，不是10％含量的水，但酒精的水是和酒精一起销售和管理的，实际的销售给客户的酒精我们是可以用一个简单的算式算出来的。</p>
+<p>这个东西一般要和价格联系在一起，很明显，90％含量和80％含量的东西价格不同。一般生产的产品会有个计划的含量，如90％，那么实际的产品的含量（可能是91％）要在产品出来的时候才知道。</p>
+<p>所有的比例单位都要先在系统里设置，然后才能使用。我们在系统中一般输入比例单位，然后系统转换成基本的单位。</p>
+<p>我们要定义一个比例单位和基本单位的转换率。如果激活的比例我们知道，那么这个批次的激活的成分的数量我们可以通过和实际的数量计算得到。这个关系我们是在设置里设置好的，用在比例单位的特性的值里。就是前面说的计划的含量是90％。这个比例是变化的，我们用分类系统来表示，如实际的比例是91％。</p>
+<p>这个东西是在创建批次的时候输入的。这个批次的分类被标注为s。物料主数据的90％的标准的比例，我们可以作为默认值。分类里有个特征，必须是数字。你可以给每个比例单位一个标准的价格，然后就可以按照这个价格作物料的价格评估。首先我们要对一个单独的批次估价，然后合并。</p>
+<p>你可以激活几个成分单位的价格，然后就可以对这个物料估价，那么最后的结果就是这几个估价的和。销售的时候可以按照这个比例单位定价，交货的时候按照单独的比例计算后合并实际的总价格。这可能在矿产，钢铁等行业使用。</p>
+<p>当然销售的价格也可以是根据几个不同的比例单位，销售的时候把他们合并计算。</p>
+<p>比如一个矿产品里，含有铁、铜等不同的成分。当创建物料的时候，我们用计划的值，当收货后，我们用实际的值。计划的值可能和实际的平均值有微小的差异，这样我们看库存的总数和分项的时候就可能有差异，所以我们可以输入一个调整的参数。</p>
+<p>2。产品单位，如钢铁。</p>
+<p>我们一般是知道钢铁的总重量，如1000kg，但收货的时候，一片钢板是400，也可能是401，这个只有生产出来，或者收到货物的时候我们才知道。在我们还没有收货，不知道实际的转换的标准的时候，我们用计划的值来表示。</p>
+<p>收货了，知道了实际的转换标准，那么就用实际的转换标准来代替计划值。使用批次单位必须要用分类系统。不同的测量单位可以有不同的价格，作为物料估价或者决定销售价格。上了产品单位后，同一个物料，批次不同需要转储的时候，系统是可以作的。</p>
+<h2 id="8、价格决定"><a href="#8、价格决定" class="headerlink" title="8、价格决定"></a>8、价格决定</h2><p>每个批次的物料可以有一个单独的销售价格，因此你必须创建一个单独的条件记录在销售系统中。四步骤：</p>
+<p>在条件表里把重要的字段联合在一起，</p>
+<p>定义条件表在价格决定的顺序，</p>
+<p>分配给一个条件类型，</p>
+<p>联合作为一个计算程序。</p>
+<p>当然在条件表里你必须要有批次号码的字段。由于交货里有不同的批次，那么发票里如何显示批次价格就是问题了，你可以合并显示，也可以联合显示。</p>
+<p>那么复制控制中一般可以选择的有g h b d。对于要对物料的单独的批次估价的，那么你就要在物料的会计视图的估计种类的地方选择x。当然相应的工厂的数据也要激活。一般这个时候，这个物料选择移动平均价格。</p>
+<h2 id="9、货架生命周期"><a href="#9、货架生命周期" class="headerlink" title="9、货架生命周期"></a>9、货架生命周期</h2><p>后面的说法是在不上wm的时候。没有批次管理，货架生命周期也能起作用。</p>
+<p>在收货的时候就要维护数据，他不限制你的现在的功能，它决定是否你想使用它。物料主数据里的剩余货架周期和总的周期需要被维护，批次主数据的到期日也要维护。</p>
+<p>当然如果你还可以用用户出口来维护计算周期。一般这个时候批次要在采购订单或者生产订单里确定，在采购订单里，你可以特殊的指定一个货架生命周期的最小的值作为到期日。</p>
+<p>如果批次已经存在，那么那么你的主数据就包括了相关的信息，一般它被手工的输入，或者在收货的时候创建。</p>
+<p>当货物收货的时候，一个检测就要发生，系统计算货架周期如20天，产品的生产日期如是2005。01。01，收货的日期是2005。01。03，那么你可以收货，否则就要根据后台设置出警告或者报错的消息。</p>
+<p>如果批次管理的批次选择是按照货架生命周期，那么就要用到标准的特性，根据你要求的货架生命周，系统选择要求的批次。这个东西食品化学等行业会用到，我记忆中，仪征化纤的用户就有类似的要求。</p>
+<h2 id="10、批次清单和质量管理"><a href="#10、批次清单和质量管理" class="headerlink" title="10、批次清单和质量管理"></a>10、批次清单和质量管理</h2><p>批次清单就是批次追踪用的，知道这个批次的物料现在在哪里，比如在那个客户哪里。</p>
+<p>批次管理和质量管理的关系：质量管理使用检验特性来记录检验的结果，批次管理使用分类系统来记录特性值，如果这二者是相同的，那么应该建立联系，避免重复输入。</p>
+<p>质量的特性如果维护好了，数据可以传输到批次管理里。这和批次单位联合，就能解决一个曾经非常困扰我们的难题，叫按质论价，比如钢铁行业就有这个要求。</p>
+<p>要求如下，首先要有一个特性，这个特性必须有单个的间隔，其次，建立建议特性的时候必须参考主质量特性，再次，物料说明要建立，物料检验特性要分配给每一个主特性。</p>
+<p>所以我们建立物料的时候，首先，要选择按照物料说明作质量检验。当检验结果输入的时候，需要的值被检验特性传输，就是从检验特性到总体的物料的特性。听说有的公司为了这个功能作了很多的开发的，是比较麻烦的事情。</p>
+<p>批次管理的清单中，用户可能要选择看某一些特征的批次的数据，这样就可以使用这个功能，可以在后台定制好这个清单的内容，还能分权限，如大家都能看的，还是个人的。</p>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+  <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+    <div></div>
+    <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+      <span>赏</span>
+    </button>
+    <div id="QR" style="display: none;">
+      
+      
+        <div id="alipay" style="display: inline-block">
+          <img id="alipay_qr" src="/images/alicode.jpg" alt="qifeba Alipay"/>
+          <p>支付宝打赏</p>
+        </div>
+      
+    </div>
+  </div>
+
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/批次管理/" rel="tag"># 批次管理</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/07/10/SAP号码段表及相关操作T-CODE/" rel="next" title="SAP号码段表及相关操作T-CODE">
+                <i class="fa fa-chevron-left"></i> SAP号码段表及相关操作T-CODE
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/07/14/SAP-FI常用数据透明表/" rel="prev" title="SAP-FI常用数据表">
+                SAP-FI常用数据表 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+        <!-- JiaThis Button BEGIN -->
+<div class="jiathis_style">
+  <a class="jiathis_button_tsina"></a>
+  <a class="jiathis_button_tqq"></a>
+  <a class="jiathis_button_weixin"></a>
+  <a class="jiathis_button_cqq"></a>
+  <a class="jiathis_button_douban"></a>
+  <a class="jiathis_button_renren"></a>
+  <a class="jiathis_button_qzone"></a>
+  <a class="jiathis_button_kaixin001"></a>
+  <a class="jiathis_button_copy"></a>
+  <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank"></a>
+  <a class="jiathis_counter_style"></a>
+</div>
+<script type="text/javascript" >
+  var jiathis_config={
+    hideMore:false
+  }
+</script>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
+<!-- JiaThis Button END -->
+
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/avatar.gif"
+               alt="qifeba" />
+          <p class="site-author-name" itemprop="name">qifeba</p>
+           
+              <p class="site-description motion-element" itemprop="description"></p>
+          
+        </div>
+        <nav class="site-state motion-element">
+
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives/">
+                <span class="site-state-item-count">17</span>
+                <span class="site-state-item-name">日志</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-categories">
+              <a href="/categories/index.html">
+                <span class="site-state-item-count">12</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-tags">
+              <a href="/tags/index.html">
+                <span class="site-state-item-count">16</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+          <div class="feed-link motion-element">
+            <a href="/atom.xml" rel="alternate">
+              <i class="fa fa-rss"></i>
+              RSS
+            </a>
+          </div>
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+        
+
+
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1、批次创建"><span class="nav-number">1.</span> <span class="nav-text">1、批次创建</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2、批次水平"><span class="nav-number">2.</span> <span class="nav-text">2、批次水平</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3、批次特性"><span class="nav-number">3.</span> <span class="nav-text">3、批次特性</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4、批次状态"><span class="nav-number">4.</span> <span class="nav-text">4、批次状态</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5、可用性检查"><span class="nav-number">5.</span> <span class="nav-text">5、可用性检查</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#6、批次决定"><span class="nav-number">6.</span> <span class="nav-text">6、批次决定</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#7、批次单位"><span class="nav-number">7.</span> <span class="nav-text">7、批次单位</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#8、价格决定"><span class="nav-number">8.</span> <span class="nav-text">8、价格决定</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#9、货架生命周期"><span class="nav-number">9.</span> <span class="nav-text">9、货架生命周期</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#10、批次清单和质量管理"><span class="nav-number">10.</span> <span class="nav-text">10、批次清单和质量管理</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2017</span>
+  <span class="with-love">
+    <i class="fa fa-qifeiba"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">qifeba</span>
+</div>
+
+
+<div class="powered-by">
+  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Mist
+  </a>
+</div>
+
+
+        
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+          <span id="scrollpercent"><span>0</span>%</span>
+        
+      </div>
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.1"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.1"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.1"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.1"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>

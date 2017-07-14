@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.qifeiba.com/"/>
-  <updated>2017-07-10T08:32:00.926Z</updated>
+  <updated>2017-07-14T09:01:52.065Z</updated>
   <id>http://www.qifeiba.com/</id>
   
   <author>
@@ -14,6 +14,808 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>配置路径的查找方法</title>
+    <link href="http://www.qifeiba.com/2017/07/14/%E9%85%8D%E7%BD%AE%E8%B7%AF%E5%BE%84%E7%9A%84%E6%9F%A5%E6%89%BE%E6%96%B9%E6%B3%95/"/>
+    <id>http://www.qifeiba.com/2017/07/14/配置路径的查找方法/</id>
+    <published>2017-07-14T09:00:23.000Z</published>
+    <updated>2017-07-14T09:01:52.065Z</updated>
+    
+    <content type="html"><![CDATA[<p>可以通过以下几个方法进行查找配置路径：<br><a id="more"></a></p>
+<p>1.数据表进行查找。SM30，输入表（T开头的表），然后选择配置。有的表系统可能会提示：没有对象维护IMG活动存在，此时我们可以在表前加V_，即V_T001L，然后再点击customzing</p>
+<p>2.F1帮助中的小钥匙。在一个字段的F1帮助中有个小钥匙，点击就能跳转到相应的配置路径。</p>
+<p>3.使用SQVI建立Table jion联接表CUS_ACTOBJ、CUS_IMGACT、CUS_IMGACH进行查询。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;可以通过以下几个方法进行查找配置路径：&lt;br&gt;
+    
+    </summary>
+    
+      <category term="技术文章" scheme="http://www.qifeiba.com/categories/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/"/>
+    
+      <category term="SAP" scheme="http://www.qifeiba.com/categories/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/SAP/"/>
+    
+    
+      <category term="小技巧" scheme="http://www.qifeiba.com/tags/%E5%B0%8F%E6%8A%80%E5%B7%A7/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>SAP-WM PA学习路径</title>
+    <link href="http://www.qifeiba.com/2017/07/14/SAP-WM%20PA%E5%AD%A6%E4%B9%A0%E8%B7%AF%E5%BE%84/"/>
+    <id>http://www.qifeiba.com/2017/07/14/SAP-WM PA学习路径/</id>
+    <published>2017-07-14T08:55:10.000Z</published>
+    <updated>2017-07-14T08:57:22.892Z</updated>
+    
+    <content type="html"><![CDATA[<p>记录了WM各要点及对应的PA教材编号，便于学习及查找。<br><a id="more"></a></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Topic &amp; Weighting</th>
+<th style="text-align:left">Way(s) to attain Primary</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Goods Issue Processes +</td>
+<td style="text-align:left">SCM601, SCM610,SCM630</td>
+</tr>
+<tr>
+<td style="text-align:left">Goods Receipt Processes ++</td>
+<td style="text-align:left">SCM601, SCM610,SCM630</td>
+</tr>
+<tr>
+<td style="text-align:left">HU and SU Management ++</td>
+<td style="text-align:left">SCM660, SCM631</td>
+</tr>
+<tr>
+<td style="text-align:left">IM-WM Interface +</td>
+<td style="text-align:left"><a href="https://training.sap.com/course/scm630-warehouse-management-classroom-095-cn-zh/" target="_blank" rel="external">SCM630</a></td>
+</tr>
+<tr>
+<td style="text-align:left">Master Data Required by WM ++</td>
+<td style="text-align:left">SCM601, SCM630</td>
+</tr>
+<tr>
+<td style="text-align:left">Mobile Data Entry (Customizing) +++</td>
+<td style="text-align:left"><a href="https://training.sap.com/course/scm631-additional-topics-in-warehouse-management-classroom-095-cn-zh/" target="_blank" rel="external">SCM631</a></td>
+</tr>
+<tr>
+<td style="text-align:left">Physical Inventory +</td>
+<td style="text-align:left"><a href="https://training.sap.com/course/scm630-warehouse-management-classroom-095-cn-zh/" target="_blank" rel="external">SCM630</a></td>
+</tr>
+<tr>
+<td style="text-align:left">Storage Section Determination +</td>
+<td style="text-align:left"><a href="https://training.sap.com/course/scm630-warehouse-management-classroom-095-cn-zh/" target="_blank" rel="external">SCM630</a></td>
+</tr>
+<tr>
+<td style="text-align:left">Storage Type Determination ++</td>
+<td style="text-align:left"><a href="https://training.sap.com/course/scm630-warehouse-management-classroom-095-cn-zh/" target="_blank" rel="external">SCM630</a></td>
+</tr>
+<tr>
+<td style="text-align:left">Warehouse Structure +</td>
+<td style="text-align:left"><a href="https://training.sap.com/course/scm630-warehouse-management-classroom-095-cn-zh/" target="_blank" rel="external">SCM630</a></td>
+</tr>
+<tr>
+<td style="text-align:left">WM Deployment Options +</td>
+<td style="text-align:left">SCM601, SCM610,SCM631</td>
+</tr>
+<tr>
+<td style="text-align:left">WM Interface and Warehouse Ac ++</td>
+<td style="text-align:left"><a href="https://training.sap.com/course/scm630-warehouse-management-classroom-095-cn-zh/" target="_blank" rel="external">SCM630</a></td>
+</tr>
+<tr>
+<td style="text-align:left">WM Movement Type Determination +</td>
+<td style="text-align:left">SCM630</td>
+</tr>
+</tbody>
+</table>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;记录了WM各要点及对应的PA教材编号，便于学习及查找。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="技术文章" scheme="http://www.qifeiba.com/categories/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/"/>
+    
+      <category term="SAP" scheme="http://www.qifeiba.com/categories/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/SAP/"/>
+    
+      <category term="WM" scheme="http://www.qifeiba.com/categories/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/SAP/WM/"/>
+    
+    
+      <category term="WM" scheme="http://www.qifeiba.com/tags/WM/"/>
+    
+      <category term="PA" scheme="http://www.qifeiba.com/tags/PA/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>SAP-MM常用数据表</title>
+    <link href="http://www.qifeiba.com/2017/07/14/SAP-MM%E5%B8%B8%E7%94%A8%E6%95%B0%E6%8D%AE%E8%A1%A8/"/>
+    <id>http://www.qifeiba.com/2017/07/14/SAP-MM常用数据表/</id>
+    <published>2017-07-14T08:47:32.000Z</published>
+    <updated>2017-07-14T10:08:03.904Z</updated>
+    
+    <content type="html"><![CDATA[<p>记录了MM模块相关的常用数据表。<br><a id="more"></a></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">数据源</th>
+<th style="text-align:left">表名</th>
+<th style="text-align:left">描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">物料主数据</td>
+<td style="text-align:left">MARA</td>
+<td style="text-align:left">常规物料数据</td>
+</tr>
+<tr>
+<td style="text-align:left"></td>
+<td style="text-align:left">MARC</td>
+<td style="text-align:left">物料的工厂数据</td>
+</tr>
+<tr>
+<td style="text-align:left"></td>
+<td style="text-align:left">MARD</td>
+<td style="text-align:left">物料的仓储位置数据</td>
+</tr>
+<tr>
+<td style="text-align:left"></td>
+<td style="text-align:left">MARM</td>
+<td style="text-align:left">物料的计量单位</td>
+</tr>
+<tr>
+<td style="text-align:left"></td>
+<td style="text-align:left">MARV</td>
+<td style="text-align:left">物料控制记录</td>
+</tr>
+<tr>
+<td style="text-align:left"></td>
+<td style="text-align:left">MBEW</td>
+<td style="text-align:left">物料评估</td>
+</tr>
+<tr>
+<td style="text-align:left"></td>
+<td style="text-align:left">MAKT</td>
+<td style="text-align:left">物料說明</td>
+</tr>
+<tr>
+<td style="text-align:left"></td>
+<td style="text-align:left">MAST</td>
+<td style="text-align:left">BOM 連接物料</td>
+</tr>
+<tr>
+<td style="text-align:left"></td>
+<td style="text-align:left">MVKE</td>
+<td style="text-align:left">物料销售数据</td>
+</tr>
+<tr>
+<td style="text-align:left"></td>
+<td style="text-align:left">MAPR</td>
+<td style="text-align:left">有关预测的物料索引</td>
+</tr>
+<tr>
+<td style="text-align:left"></td>
+<td style="text-align:left">MSTA</td>
+<td style="text-align:left">物料主记录状态</td>
+</tr>
+<tr>
+<td style="text-align:left">供应商主数据</td>
+<td style="text-align:left">LFA1</td>
+<td style="text-align:left">供应商主数据 (一般地区)</td>
+</tr>
+<tr>
+<td style="text-align:left"></td>
+<td style="text-align:left">LFAS</td>
+<td style="text-align:left">供应商主数据 (增值税登记号的一般部分)</td>
+</tr>
+<tr>
+<td style="text-align:left"></td>
+<td style="text-align:left">LFAT</td>
+<td style="text-align:left">供应商主记录（税务分组）</td>
+</tr>
+<tr>
+<td style="text-align:left"></td>
+<td style="text-align:left">LFB1</td>
+<td style="text-align:left">供应商主数据 (公司代码)</td>
+</tr>
+<tr>
+<td style="text-align:left"></td>
+<td style="text-align:left">LFB5</td>
+<td style="text-align:left">供应商主数据 (催款数据)</td>
+</tr>
+<tr>
+<td style="text-align:left"></td>
+<td style="text-align:left">LFBK</td>
+<td style="text-align:left">供应商主数据 (银行细目)</td>
+</tr>
+<tr>
+<td style="text-align:left"></td>
+<td style="text-align:left">LFBW</td>
+<td style="text-align:left">供应商主记录（预扣税类型）X</td>
+</tr>
+<tr>
+<td style="text-align:left"></td>
+<td style="text-align:left">LFC1</td>
+<td style="text-align:left">供应商主数据 (业务额)</td>
+</tr>
+<tr>
+<td style="text-align:left"></td>
+<td style="text-align:left">LFC3</td>
+<td style="text-align:left">主供应商 (特殊总分类帐交易图表)</td>
+</tr>
+<tr>
+<td style="text-align:left"></td>
+<td style="text-align:left">LFCPR</td>
+<td style="text-align:left">每一步骤的功能代码参数文件</td>
+</tr>
+<tr>
+<td style="text-align:left"></td>
+<td style="text-align:left">LFM1</td>
+<td style="text-align:left">供应商主记录购买组织数据</td>
+</tr>
+<tr>
+<td style="text-align:left"></td>
+<td style="text-align:left">LFM2</td>
+<td style="text-align:left">供应商主文件记录: 采购数据</td>
+</tr>
+<tr>
+<td style="text-align:left">信息记录</td>
+<td style="text-align:left">EINA</td>
+<td style="text-align:left">采购信息记录 - 一般数据</td>
+</tr>
+<tr>
+<td style="text-align:left"></td>
+<td style="text-align:left">EINE</td>
+<td style="text-align:left">采购信息记录 - 采购组织数据</td>
+</tr>
+<tr>
+<td style="text-align:left"></td>
+<td style="text-align:left">EIPA</td>
+<td style="text-align:left">订购价格历史：信息记录</td>
+</tr>
+<tr>
+<td style="text-align:left">预留</td>
+<td style="text-align:left">RKPF</td>
+<td style="text-align:left">凭证头：预订</td>
+</tr>
+<tr>
+<td style="text-align:left"></td>
+<td style="text-align:left">RESB</td>
+<td style="text-align:left">预定/相关需求</td>
+</tr>
+<tr>
+<td style="text-align:left">货源清单</td>
+<td style="text-align:left">EORD</td>
+<td style="text-align:left">采购货源清单</td>
+</tr>
+<tr>
+<td style="text-align:left">采购申请</td>
+<td style="text-align:left">EBAN</td>
+<td style="text-align:left">采购申请</td>
+</tr>
+<tr>
+<td style="text-align:left"></td>
+<td style="text-align:left">EBKN</td>
+<td style="text-align:left">采购申请帐户设置</td>
+</tr>
+<tr>
+<td style="text-align:left">采购订单</td>
+<td style="text-align:left">EKBE</td>
+<td style="text-align:left">采购凭证历史</td>
+</tr>
+<tr>
+<td style="text-align:left"></td>
+<td style="text-align:left">EKBEH</td>
+<td style="text-align:left">删除的PO历史记录</td>
+</tr>
+<tr>
+<td style="text-align:left"></td>
+<td style="text-align:left">EKBZ</td>
+<td style="text-align:left">每个采购凭证的历史：交货费用</td>
+</tr>
+<tr>
+<td style="text-align:left"></td>
+<td style="text-align:left">EKBZH</td>
+<td style="text-align:left">每个采购凭证的历史：交货费用</td>
+</tr>
+<tr>
+<td style="text-align:left"></td>
+<td style="text-align:left">EKKI</td>
+<td style="text-align:left">采购条件索引</td>
+</tr>
+<tr>
+<td style="text-align:left"></td>
+<td style="text-align:left">EKKN</td>
+<td style="text-align:left">采购凭证中的帐户设置</td>
+</tr>
+<tr>
+<td style="text-align:left"></td>
+<td style="text-align:left">EKKO</td>
+<td style="text-align:left">采购凭证抬头</td>
+</tr>
+<tr>
+<td style="text-align:left"></td>
+<td style="text-align:left">EKPA</td>
+<td style="text-align:left">采购中的合伙人规则</td>
+</tr>
+<tr>
+<td style="text-align:left"></td>
+<td style="text-align:left">EKPB</td>
+<td style="text-align:left">采购凭证中的”已供物料”项</td>
+</tr>
+<tr>
+<td style="text-align:left"></td>
+<td style="text-align:left">EKPO</td>
+<td style="text-align:left">采购凭证项目</td>
+</tr>
+<tr>
+<td style="text-align:left"></td>
+<td style="text-align:left">EKPV</td>
+<td style="text-align:left">采购凭证项目的库存转储装运数据</td>
+</tr>
+<tr>
+<td style="text-align:left"></td>
+<td style="text-align:left">EKRS</td>
+<td style="text-align:left">ERS过程：将被开票的货物（商品）移动</td>
+</tr>
+<tr>
+<td style="text-align:left"></td>
+<td style="text-align:left">EKAB</td>
+<td style="text-align:left">批准凭证</td>
+</tr>
+<tr>
+<td style="text-align:left"></td>
+<td style="text-align:left">EKAN</td>
+<td style="text-align:left">供应商地址: 采购凭证</td>
+</tr>
+<tr>
+<td style="text-align:left">物料凭证</td>
+<td style="text-align:left">MKPF</td>
+<td style="text-align:left">抬头：物料凭证</td>
+</tr>
+<tr>
+<td style="text-align:left"></td>
+<td style="text-align:left">MSEG</td>
+<td style="text-align:left">凭证段:物料</td>
+</tr>
+<tr>
+<td style="text-align:left">发票</td>
+<td style="text-align:left">RBKP</td>
+<td style="text-align:left">凭证表头：发票收据</td>
+</tr>
+<tr>
+<td style="text-align:left"></td>
+<td style="text-align:left">RSEG</td>
+<td style="text-align:left">凭证项目：收款发票</td>
+</tr>
+<tr>
+<td style="text-align:left">配额</td>
+<td style="text-align:left">EQUK</td>
+<td style="text-align:left">配额文件: 标题</td>
+</tr>
+<tr>
+<td style="text-align:left"></td>
+<td style="text-align:left">EQUP</td>
+<td style="text-align:left">配额文件：项目</td>
+</tr>
+<tr>
+<td style="text-align:left">装运</td>
+<td style="text-align:left">T027A</td>
+<td style="text-align:left">装运须知,采购</td>
+</tr>
+<tr>
+<td style="text-align:left"></td>
+<td style="text-align:left">T027B</td>
+<td style="text-align:left">文本: 装运须知</td>
+</tr>
+<tr>
+<td style="text-align:left"></td>
+<td style="text-align:left">T027C</td>
+<td style="text-align:left">与装运须知相符的码</td>
+</tr>
+<tr>
+<td style="text-align:left"></td>
+<td style="text-align:left">T027D</td>
+<td style="text-align:left">依据装运须知: 文本</td>
+</tr>
+<tr>
+<td style="text-align:left">盘点</td>
+<td style="text-align:left">IKPF</td>
+<td style="text-align:left">抬头：实地盘存凭证</td>
+</tr>
+<tr>
+<td style="text-align:left"></td>
+<td style="text-align:left">ISEG</td>
+<td style="text-align:left">盘点库存凭证项目</td>
+</tr>
+<tr>
+<td style="text-align:left">批次</td>
+<td style="text-align:left">MCHA</td>
+<td style="text-align:left">批次</td>
+</tr>
+<tr>
+<td style="text-align:left"></td>
+<td style="text-align:left">MCHB</td>
+<td style="text-align:left">批量库存</td>
+</tr>
+<tr>
+<td style="text-align:left">计划协议</td>
+<td style="text-align:left">EKEH</td>
+<td style="text-align:left">计划协议批准凭证</td>
+</tr>
+<tr>
+<td style="text-align:left"></td>
+<td style="text-align:left">EKEK</td>
+<td style="text-align:left">计划协议批准的标题数据</td>
+</tr>
+<tr>
+<td style="text-align:left"></td>
+<td style="text-align:left">EKES</td>
+<td style="text-align:left">供应商确认</td>
+</tr>
+<tr>
+<td style="text-align:left"></td>
+<td style="text-align:left">EKET</td>
+<td style="text-align:left">计划协议计划行</td>
+</tr>
+<tr>
+<td style="text-align:left"></td>
+<td style="text-align:left">EKETH</td>
+<td style="text-align:left">计划协议计划: 历史表</td>
+</tr>
+<tr>
+<td style="text-align:left">转储</td>
+<td style="text-align:left">LTBK</td>
+<td style="text-align:left">转储请求抬头</td>
+</tr>
+<tr>
+<td style="text-align:left"></td>
+<td style="text-align:left">LTBP</td>
+<td style="text-align:left">转储请求项目</td>
+</tr>
+<tr>
+<td style="text-align:left"></td>
+<td style="text-align:left">LTAK</td>
+<td style="text-align:left">WM转储单抬头</td>
+</tr>
+<tr>
+<td style="text-align:left"></td>
+<td style="text-align:left">LTAP</td>
+<td style="text-align:left">转储单项目</td>
+</tr>
+<tr>
+<td style="text-align:left"></td>
+<td style="text-align:left">EKUB</td>
+<td style="text-align:left">有关物料的库存运输单的索引</td>
+</tr>
+<tr>
+<td style="text-align:left"></td>
+<td style="text-align:left">ESKN</td>
+<td style="text-align:left">服务包中的帐户分配</td>
+</tr>
+<tr>
+<td style="text-align:left"></td>
+<td style="text-align:left">MBPR</td>
+<td style="text-align:left">生产仓位库存</td>
+</tr>
+<tr>
+<td style="text-align:left"></td>
+<td style="text-align:left">MLAN</td>
+<td style="text-align:left">物料的税分类</td>
+</tr>
+<tr>
+<td style="text-align:left"></td>
+<td style="text-align:left">MLGN</td>
+<td style="text-align:left">每一仓库号物料数据</td>
+</tr>
+<tr>
+<td style="text-align:left"></td>
+<td style="text-align:left">MLGT</td>
+<td style="text-align:left">每一存储类型的物料数据</td>
+</tr>
+<tr>
+<td style="text-align:left"></td>
+<td style="text-align:left">MVER</td>
+<td style="text-align:left">物料消耗量</td>
+</tr>
+<tr>
+<td style="text-align:left"></td>
+<td style="text-align:left">MVKE</td>
+<td style="text-align:left">物料销售数据</td>
+</tr>
+<tr>
+<td style="text-align:left"></td>
+<td style="text-align:left">T001L</td>
+<td style="text-align:left">仓储地点</td>
+</tr>
+<tr>
+<td style="text-align:left"></td>
+<td style="text-align:left">T001W</td>
+<td style="text-align:left">工厂/分支机构</td>
+</tr>
+<tr>
+<td style="text-align:left"></td>
+<td style="text-align:left">NRIV</td>
+<td style="text-align:left">号码范围间隔</td>
+</tr>
+<tr>
+<td style="text-align:left"></td>
+<td style="text-align:left">T024</td>
+<td style="text-align:left">采购组</td>
+</tr>
+<tr>
+<td style="text-align:left"></td>
+<td style="text-align:left">T024E</td>
+<td style="text-align:left">采购组织</td>
+</tr>
+<tr>
+<td style="text-align:left"></td>
+<td style="text-align:left">T024W</td>
+<td style="text-align:left">工厂的有效采购组织</td>
+</tr>
+<tr>
+<td style="text-align:left"></td>
+<td style="text-align:left">T024Z</td>
+<td style="text-align:left">采购组织</td>
+</tr>
+<tr>
+<td style="text-align:left"></td>
+<td style="text-align:left">T023</td>
+<td style="text-align:left">物料组</td>
+</tr>
+<tr>
+<td style="text-align:left"></td>
+<td style="text-align:left">T156</td>
+<td style="text-align:left">移动类型</td>
+</tr>
+<tr>
+<td style="text-align:left"></td>
+<td style="text-align:left">T157H</td>
+<td style="text-align:left">移动类型的帮助文本</td>
+</tr>
+<tr>
+<td style="text-align:left"></td>
+<td style="text-align:left">KONP</td>
+<td style="text-align:left">条件( 项目 )</td>
+</tr>
+<tr>
+<td style="text-align:left"></td>
+<td style="text-align:left">T16FC</td>
+<td style="text-align:left">批准代码</td>
+</tr>
+</tbody>
+</table>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;记录了MM模块相关的常用数据表。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="技术文章" scheme="http://www.qifeiba.com/categories/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/"/>
+    
+      <category term="SAP" scheme="http://www.qifeiba.com/categories/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/SAP/"/>
+    
+      <category term="ABAP" scheme="http://www.qifeiba.com/categories/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/SAP/ABAP/"/>
+    
+    
+      <category term="table" scheme="http://www.qifeiba.com/tags/table/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>SAP-FI常用数据表</title>
+    <link href="http://www.qifeiba.com/2017/07/14/SAP-FI%E5%B8%B8%E7%94%A8%E6%95%B0%E6%8D%AE%E9%80%8F%E6%98%8E%E8%A1%A8/"/>
+    <id>http://www.qifeiba.com/2017/07/14/SAP-FI常用数据透明表/</id>
+    <published>2017-07-14T01:45:04.000Z</published>
+    <updated>2017-07-14T10:04:54.433Z</updated>
+    
+    <content type="html"><![CDATA[<p>记录FI相关的常用数据表，以便查询。<br><a id="more"></a></p>
+<h2 id="GL部分："><a href="#GL部分：" class="headerlink" title="GL部分："></a>GL部分：</h2><p>FAGLFLEXT   新总账汇总表</p>
+<p>GLT0        旧总帐汇总表</p>
+<p>SKA1        总账科目主记录 (科目表)  科目表层数据</p>
+<p>SKAT        总帐科目主记录（科目表：说明）包括语言代码</p>
+<p>SKB1        总帐科目主记录 (公司代码) 公司代码层数据</p>
+<p>BKPF        财务凭证抬头</p>
+<p>BSEG        财务凭证行项目 （会计凭证明细）</p>
+<p>BSIK, BSAK 分别是供应商(K)的未清已清项存放的表  </p>
+<p>BSIS, BSAS 分别是总账(S)的未清已清项存放的表    </p>
+<p>BSID, BSAD 分别是客户(D)的未清已清项存放的表 </p>
+<p>I 表示未清，A 表示已清。</p>
+<h2 id="AP部分："><a href="#AP部分：" class="headerlink" title="AP部分："></a>AP部分：</h2><p>LFA1 供应商主数据 (一般地区)</p>
+<p>LFAS 供应商主数据 (增值税登记号的一般部分)</p>
+<p>LFB1 供应商主数据 (公司代码)</p>
+<p>LFB5 供应商主数据 (催款数据)</p>
+<p>LFBK 供应商主数据 (银行细目)</p>
+<p>LFC1 供应商主数据 (业务额)</p>
+<p>LFC3 主供应商 (特殊总分类帐交易图表)</p>
+<h2 id="AR部分："><a href="#AR部分：" class="headerlink" title="AR部分："></a>AR部分：</h2><p>KNA1 客户主文件的一般数据</p>
+<p>KNAS 客户主数据（一般地区的增值税登记号）</p>
+<p>KNB1 客户主数据 (公司代码)</p>
+<p>KNB4 客户收付历史</p>
+<p>KNB5 客户主记录 (催款数据)</p>
+<p>KNBK 客户主数据 (银行细目)</p>
+<p>KNC1 客户主记录 (交易额)</p>
+<p>KNC3 客户主数据 (特殊总帐业务额)</p>
+<p>KNKA 客户主数据信贷管理: 中心数据</p>
+<p>KNKK 客户主数据信贷管理: 控制范围数据</p>
+<h2 id="货币："><a href="#货币：" class="headerlink" title="货币："></a>货币：</h2><p>TCURC 货币代码</p>
+<p>TCURT 货币代码名</p>
+<p>TCURV 货币换算的兑换率类型</p>
+<p>TCURR 汇率</p>
+<p>TCURW 汇率类型的使用</p>
+<p>TCURF 转换因子</p>
+<h2 id="银行："><a href="#银行：" class="headerlink" title="银行："></a>银行：</h2><p>BNKA 银行主数据</p>
+<p>T012 开户行</p>
+<p>T012T 开户行帐户名</p>
+<p>NBNK 银行的号码范围</p>
+<h2 id="业务范围："><a href="#业务范围：" class="headerlink" title="业务范围："></a>业务范围：</h2><p>TGSB 业务范围</p>
+<p>TGSBT 业务部门名称</p>
+<p>T001 公司代码</p>
+<p>T001T 公司代码相关的文本</p>
+<p>T005 国家</p>
+<p>T005T 国家名</p>
+<p>T001B 允许的记帐期</p>
+<h2 id="过帐码："><a href="#过帐码：" class="headerlink" title="过帐码："></a>过帐码：</h2><p>TBSL   过帐码</p>
+<p>TBSLT 过帐代码名称</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;记录FI相关的常用数据表，以便查询。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="技术文章" scheme="http://www.qifeiba.com/categories/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/"/>
+    
+      <category term="SAP" scheme="http://www.qifeiba.com/categories/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/SAP/"/>
+    
+      <category term="ABAP" scheme="http://www.qifeiba.com/categories/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/SAP/ABAP/"/>
+    
+    
+      <category term="table" scheme="http://www.qifeiba.com/tags/table/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>sap批次管理</title>
+    <link href="http://www.qifeiba.com/2017/07/12/SAP%E6%89%B9%E6%AC%A1%E7%AE%A1%E7%90%86/"/>
+    <id>http://www.qifeiba.com/2017/07/12/SAP批次管理/</id>
+    <published>2017-07-12T13:45:46.000Z</published>
+    <updated>2017-07-14T10:08:31.776Z</updated>
+    
+    <content type="html"><![CDATA[<p>批次管理包括的内容：主数据、批次水平、批次特性、批次状态、可用性检查、批次决定、价格决定，货架生命周期到期日、批次使用清单。<br><a id="more"></a></p>
+<p>批次特性和质量管理、连续制造中的批次产生、优化批次处理、批次单位、联合批次特性和批次单位、批次管理和价格的关系、在lis系统的实际和计划值、质量管理的数据概念、质量单位转储.</p>
+<h2 id="1、批次创建"><a href="#1、批次创建" class="headerlink" title="1、批次创建"></a>1、批次创建</h2><p>主数据在物料主数据的采购试图等选中批次管理的按钮，可以手工创建批或者在收货的时候自动创建，批次可以是内部也可以是外部给号，位数10位，可以是字母。</p>
+<p>如果要改变批次管理，就是这个物料有批次换成没批次或者没批次换成有批次，那么要求，以前的会计年度期末，本月和上月期末无库存。</p>
+<p>如果批次的号码要外部给号，有特殊要求，请看用户出口，自己写程序吧。你能定义每一个移动类型，是否输入批次号码，自动还是手工，是否有检测等有8个选择。</p>
+<p>对于连续生产，订单创建或者批次的时候，你可以定义是否产生批次，自动的批次分类是否给出，是否给定自由的特性。</p>
+<h2 id="2、批次水平"><a href="#2、批次水平" class="headerlink" title="2、批次水平"></a>2、批次水平</h2><p>如果是工厂物料级别，不同的工厂相同物料可以有不同的批次号码，你能在不同工厂间转储批次库存，尽管他们有不同的特性，如果你想批次特性是跨工厂的，那么这里不支持，请改变批次的设置。</p>
+<p>如果物料级别，所有的工厂的同一个物料具有相同的特性，物料不同批次相同并且特性不同是许可的。</p>
+<p>如果是集团级别，一个批次号码在一个集团内只能使用一次，一个号码只能分配给一个物料。</p>
+<p>sap默认的级别是工厂级别，可以修改你可以把批次的级别升高，但降低是严格控制的，只能是从集团级别到物料级别。</p>
+<h2 id="3、批次特性"><a href="#3、批次特性" class="headerlink" title="3、批次特性"></a>3、批次特性</h2><p>批次用的分类的类型是022或者023。</p>
+<p>物料和它的批必需分在相同的类里，相同的特性被使用在物料和批的类中，特性的值可以传递。</p>
+<p>如果物料有某一个特性的值，批次的值不能超过这个物料的特性值的范围。</p>
+<p>如果物料和批都有相同的特性，那么根据特性的控制，那么可以在批次的特性里直接看到或者看不到物料的特性的值。</p>
+<p>特征是可以自己定义的，也可以用标准的，如货架生命周期的剩余期限。</p>
+<p>你可以用用户出口，在创建批次的时候，自动从一个来源批决定主数据的值。</p>
+<h2 id="4、批次状态"><a href="#4、批次状态" class="headerlink" title="4、批次状态"></a>4、批次状态</h2><p>就是冻结和非冻结状态，在批次水平定义的时候定义了是否激活。</p>
+<p>批次状态是在批次主数据的位置修改，系统可以自动修改状态。</p>
+<p>其他的库存和批次状态没有关系，不考虑批次状态。</p>
+<p>批次状态改变后，系统自动作一个物料凭证。</p>
+<p>如果有批次决定，不是手工决定批次，那么可以和分类系统连接，让系统自动找到的批次不包括冻结状态的批次，特性标准的是lobm_zustd,当然你可以定义自己的特性。</p>
+<h2 id="5、可用性检查"><a href="#5、可用性检查" class="headerlink" title="5、可用性检查"></a>5、可用性检查</h2><p>在可用性检查的时候，物料冻结或者不冻结的批次状态的物料，我们都可以认为是可用的。</p>
+<p>如果你使用了批次状态的特性，就能区分冻结或者非冻结状态的批次。</p>
+<p>如果你想找非冻结状态的批次，那么特征值是空的就可以了。</p>
+<p>选择的结果，是你只考虑非冻结状态的批次。</p>
+<p>在设置里，你可以维护可用性检查是冻结还是非冻结状态。</p>
+<h2 id="6、批次决定"><a href="#6、批次决定" class="headerlink" title="6、批次决定"></a>6、批次决定</h2><p>自动选择最适合的批次作为销售或者生产用，或者在没有wm的情况下，实现先进先出，或者先到期的货物先出（货架寿命周期）。</p>
+<p>说白了，这里就是一个典型的sap的条件技术，我想要是懂采购的方案的人，到这里仔细看看，应该不难理解。</p>
+<p>对于销售，批次可以在销售订单或者交货的时候自动决定。</p>
+<p>一般在批次决定的时候，要用到分类的功能。系统可以按照你要求的特性值搜索批次，如果不合适，还可以继续搜索，这里就不是自动选择批次，而是在你选择最适合的批次的时候提供帮助。</p>
+<p>在货物出库或者转储的时候，可以使用批次决定，标准系统批次决定是在线运行。对于生产出库，bom里有要求的批次的特性值，系统根据这个要求的特性值自动选择。</p>
+<p>如果没有，那么就按照策略选择。如果批次在生产订单的时候还没有被自动选择，那么出库的时候可以决定。如果批次决定没有使用，那么在wm系统中一定要决定批次。</p>
+<p>对于重复制造，看板，领料清单等功能，批次决定也可以使用。我习惯是使用领料清单的时候决定批次。</p>
+<p>对于销售，首先是在销售订单的时候决定批次，如果成功，可以传输数据到交货和wm系统。如果交货的时候，批次还没有决定，那么批次分割有可能使用。</p>
+<p>如果成功的找到了批次，那么可以传输数据到wm系统，否则就要到wm的转储单里决定批次。销售的批次决定要用到策略。</p>
+<p>当然一般要用到分类系统，也是寻找和要求的值符合的批次，如果找不到，那么你就只能修改查找的标准，然后再执行批次决定的程序了。再wm系统里，一般用状态和货架生命周期来选择批次。</p>
+<p>这里的批次决定是在后台运行。你可以修改选择的批次。批次决定可以使用用户出口来决定。批次分割的数据决定最大的批次建议的数量。</p>
+<h2 id="7、批次单位"><a href="#7、批次单位" class="headerlink" title="7、批次单位"></a>7、批次单位</h2><p>批次单位和普通单位的区别是可以修改转换率，你可以先在物料主数据里计划一个转换率，然后实际的转换率你可以在测量的基础上在批次主数据中定义。如果每一批的转换率都不一样，那么你就可以使用这个功能。批次单位可以分成2种：</p>
+<p>1：活动成分管理。或者叫比例单位。</p>
+<p>比如一桶里是100kg含量90％的酒精，我们通常使用的是桶，或者kg来表示酒精的数量，但客户真的要的是酒精，不是10％含量的水，但酒精的水是和酒精一起销售和管理的，实际的销售给客户的酒精我们是可以用一个简单的算式算出来的。</p>
+<p>这个东西一般要和价格联系在一起，很明显，90％含量和80％含量的东西价格不同。一般生产的产品会有个计划的含量，如90％，那么实际的产品的含量（可能是91％）要在产品出来的时候才知道。</p>
+<p>所有的比例单位都要先在系统里设置，然后才能使用。我们在系统中一般输入比例单位，然后系统转换成基本的单位。</p>
+<p>我们要定义一个比例单位和基本单位的转换率。如果激活的比例我们知道，那么这个批次的激活的成分的数量我们可以通过和实际的数量计算得到。这个关系我们是在设置里设置好的，用在比例单位的特性的值里。就是前面说的计划的含量是90％。这个比例是变化的，我们用分类系统来表示，如实际的比例是91％。</p>
+<p>这个东西是在创建批次的时候输入的。这个批次的分类被标注为s。物料主数据的90％的标准的比例，我们可以作为默认值。分类里有个特征，必须是数字。你可以给每个比例单位一个标准的价格，然后就可以按照这个价格作物料的价格评估。首先我们要对一个单独的批次估价，然后合并。</p>
+<p>你可以激活几个成分单位的价格，然后就可以对这个物料估价，那么最后的结果就是这几个估价的和。销售的时候可以按照这个比例单位定价，交货的时候按照单独的比例计算后合并实际的总价格。这可能在矿产，钢铁等行业使用。</p>
+<p>当然销售的价格也可以是根据几个不同的比例单位，销售的时候把他们合并计算。</p>
+<p>比如一个矿产品里，含有铁、铜等不同的成分。当创建物料的时候，我们用计划的值，当收货后，我们用实际的值。计划的值可能和实际的平均值有微小的差异，这样我们看库存的总数和分项的时候就可能有差异，所以我们可以输入一个调整的参数。</p>
+<p>2。产品单位，如钢铁。</p>
+<p>我们一般是知道钢铁的总重量，如1000kg，但收货的时候，一片钢板是400，也可能是401，这个只有生产出来，或者收到货物的时候我们才知道。在我们还没有收货，不知道实际的转换的标准的时候，我们用计划的值来表示。</p>
+<p>收货了，知道了实际的转换标准，那么就用实际的转换标准来代替计划值。使用批次单位必须要用分类系统。不同的测量单位可以有不同的价格，作为物料估价或者决定销售价格。上了产品单位后，同一个物料，批次不同需要转储的时候，系统是可以作的。</p>
+<h2 id="8、价格决定"><a href="#8、价格决定" class="headerlink" title="8、价格决定"></a>8、价格决定</h2><p>每个批次的物料可以有一个单独的销售价格，因此你必须创建一个单独的条件记录在销售系统中。四步骤：</p>
+<p>在条件表里把重要的字段联合在一起，</p>
+<p>定义条件表在价格决定的顺序，</p>
+<p>分配给一个条件类型，</p>
+<p>联合作为一个计算程序。</p>
+<p>当然在条件表里你必须要有批次号码的字段。由于交货里有不同的批次，那么发票里如何显示批次价格就是问题了，你可以合并显示，也可以联合显示。</p>
+<p>那么复制控制中一般可以选择的有g h b d。对于要对物料的单独的批次估价的，那么你就要在物料的会计视图的估计种类的地方选择x。当然相应的工厂的数据也要激活。一般这个时候，这个物料选择移动平均价格。</p>
+<h2 id="9、货架生命周期"><a href="#9、货架生命周期" class="headerlink" title="9、货架生命周期"></a>9、货架生命周期</h2><p>后面的说法是在不上wm的时候。没有批次管理，货架生命周期也能起作用。</p>
+<p>在收货的时候就要维护数据，他不限制你的现在的功能，它决定是否你想使用它。物料主数据里的剩余货架周期和总的周期需要被维护，批次主数据的到期日也要维护。</p>
+<p>当然如果你还可以用用户出口来维护计算周期。一般这个时候批次要在采购订单或者生产订单里确定，在采购订单里，你可以特殊的指定一个货架生命周期的最小的值作为到期日。</p>
+<p>如果批次已经存在，那么那么你的主数据就包括了相关的信息，一般它被手工的输入，或者在收货的时候创建。</p>
+<p>当货物收货的时候，一个检测就要发生，系统计算货架周期如20天，产品的生产日期如是2005。01。01，收货的日期是2005。01。03，那么你可以收货，否则就要根据后台设置出警告或者报错的消息。</p>
+<p>如果批次管理的批次选择是按照货架生命周期，那么就要用到标准的特性，根据你要求的货架生命周，系统选择要求的批次。这个东西食品化学等行业会用到，我记忆中，仪征化纤的用户就有类似的要求。</p>
+<h2 id="10、批次清单和质量管理"><a href="#10、批次清单和质量管理" class="headerlink" title="10、批次清单和质量管理"></a>10、批次清单和质量管理</h2><p>批次清单就是批次追踪用的，知道这个批次的物料现在在哪里，比如在那个客户哪里。</p>
+<p>批次管理和质量管理的关系：质量管理使用检验特性来记录检验的结果，批次管理使用分类系统来记录特性值，如果这二者是相同的，那么应该建立联系，避免重复输入。</p>
+<p>质量的特性如果维护好了，数据可以传输到批次管理里。这和批次单位联合，就能解决一个曾经非常困扰我们的难题，叫按质论价，比如钢铁行业就有这个要求。</p>
+<p>要求如下，首先要有一个特性，这个特性必须有单个的间隔，其次，建立建议特性的时候必须参考主质量特性，再次，物料说明要建立，物料检验特性要分配给每一个主特性。</p>
+<p>所以我们建立物料的时候，首先，要选择按照物料说明作质量检验。当检验结果输入的时候，需要的值被检验特性传输，就是从检验特性到总体的物料的特性。听说有的公司为了这个功能作了很多的开发的，是比较麻烦的事情。</p>
+<p>批次管理的清单中，用户可能要选择看某一些特征的批次的数据，这样就可以使用这个功能，可以在后台定制好这个清单的内容，还能分权限，如大家都能看的，还是个人的。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;批次管理包括的内容：主数据、批次水平、批次特性、批次状态、可用性检查、批次决定、价格决定，货架生命周期到期日、批次使用清单。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="技术文章" scheme="http://www.qifeiba.com/categories/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/"/>
+    
+      <category term="SAP" scheme="http://www.qifeiba.com/categories/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/SAP/"/>
+    
+      <category term="MM" scheme="http://www.qifeiba.com/categories/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/SAP/MM/"/>
+    
+    
+      <category term="批次管理" scheme="http://www.qifeiba.com/tags/%E6%89%B9%E6%AC%A1%E7%AE%A1%E7%90%86/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>SAP号码段表及相关操作T-CODE</title>
+    <link href="http://www.qifeiba.com/2017/07/10/SAP%E5%8F%B7%E7%A0%81%E6%AE%B5%E8%A1%A8%E5%8F%8A%E7%9B%B8%E5%85%B3%E6%93%8D%E4%BD%9CT-CODE/"/>
+    <id>http://www.qifeiba.com/2017/07/10/SAP号码段表及相关操作T-CODE/</id>
+    <published>2017-07-10T13:19:47.000Z</published>
+    <updated>2017-07-14T10:06:36.172Z</updated>
+    
+    <content type="html"><![CDATA[<p>如果号码段出现异常，可以直接修改此表：NRIV。<br><a id="more"></a><br>其中，<br>销售凭证对象名：RV_BELEG</p>
+<p>物料凭证对象名：MATBELEG</p>
+<p><strong>相关TCODE：</strong></p>
+<p>FICO相关号码段维护：FBN1</p>
+<p>SD相关号码段维护： VN01</p>
+<p>WH相关凭证号码段： LN01</p>
+<p>MM物料凭证号码段： OMBT</p>
+<p>所有的号码段：SNRO/SNUM</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;如果号码段出现异常，可以直接修改此表：NRIV。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="技术文章" scheme="http://www.qifeiba.com/categories/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/"/>
+    
+      <category term="SAP" scheme="http://www.qifeiba.com/categories/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/SAP/"/>
+    
+      <category term="ABAP" scheme="http://www.qifeiba.com/categories/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/SAP/ABAP/"/>
+    
+    
+      <category term="table" scheme="http://www.qifeiba.com/tags/table/"/>
+    
+      <category term="号码段" scheme="http://www.qifeiba.com/tags/%E5%8F%B7%E7%A0%81%E6%AE%B5/"/>
+    
+  </entry>
   
   <entry>
     <title>水调歌头-甲午</title>
@@ -100,7 +902,7 @@
     <link href="http://www.qifeiba.com/2017/07/10/%E7%94%A8%E6%88%B7%E5%8F%8A%E6%9D%83%E9%99%90%E7%9B%B8%E5%85%B3%E8%A1%A8/"/>
     <id>http://www.qifeiba.com/2017/07/10/用户及权限相关表/</id>
     <published>2017-07-10T06:49:41.000Z</published>
-    <updated>2017-07-10T07:06:50.214Z</updated>
+    <updated>2017-07-14T10:07:34.201Z</updated>
     
     <content type="html"><![CDATA[<p>由于权限所致，经常出现没有suim却要查用户信息及其权限的情况，因此整理了一下相关表信息，以便后用。<br><a id="more"></a></p>
 <h2 id="用户信息相关表"><a href="#用户信息相关表" class="headerlink" title="用户信息相关表"></a>用户信息相关表</h2><p>USR02：User Logon Data(包括用户名称密码,是否锁住等字段)</p>
@@ -123,9 +925,9 @@
     
       <category term="技术文章" scheme="http://www.qifeiba.com/categories/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/"/>
     
-      <category term="sap" scheme="http://www.qifeiba.com/categories/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/sap/"/>
+      <category term="SAP" scheme="http://www.qifeiba.com/categories/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/SAP/"/>
     
-      <category term="abap" scheme="http://www.qifeiba.com/categories/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/sap/abap/"/>
+      <category term="ABAP" scheme="http://www.qifeiba.com/categories/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/SAP/ABAP/"/>
     
     
       <category term="table" scheme="http://www.qifeiba.com/tags/table/"/>
@@ -137,42 +939,40 @@
   </entry>
   
   <entry>
-    <title>SAP ECC6.0 IDES中client及用户名</title>
-    <link href="http://www.qifeiba.com/2017/07/08/SAP%20ECC6.0%20IDES%E5%90%84client%E5%8F%8A%E7%94%A8%E6%88%B7%E5%90%8D/"/>
-    <id>http://www.qifeiba.com/2017/07/08/SAP ECC6.0 IDES各client及用户名/</id>
+    <title>获取长文本的方法</title>
+    <link href="http://www.qifeiba.com/2017/07/08/%E8%8E%B7%E5%8F%96%E9%95%BF%E6%96%87%E6%9C%AC%E7%9A%84%E6%96%B9%E6%B3%95/"/>
+    <id>http://www.qifeiba.com/2017/07/08/获取长文本的方法/</id>
     <published>2017-07-08T01:08:35.000Z</published>
-    <updated>2017-07-08T00:05:09.536Z</updated>
+    <updated>2017-07-14T10:10:25.014Z</updated>
     
-    <content type="html"><![CDATA[<p>sap ides中包含了很多个client，并且提供了多个默认的用户名和密码。<br><a id="more"></a></p>
-<h3 id="用户名及密码"><a href="#用户名及密码" class="headerlink" title="用户名及密码"></a>用户名及密码</h3><p>In client 000, 001, 066, 800 user SAP* has the password 06071992. </p>
-<p>In client 000, 001, 800 user DDIC has the password 19920706. </p>
-<p>User SAPCPIC in client 000 has the password ADMIN. </p>
-<p>User EARLYWATCH in client 066 has the password SUPPORT. </p>
-<h3 id="IDES中Client用途"><a href="#IDES中Client用途" class="headerlink" title="IDES中Client用途"></a>IDES中Client用途</h3><p><strong>集团000、001、066为SAP标准集团</strong></p>
-<p>000  sap reference client , 配传输路径或者升级等</p>
-<p>001  sap sample client</p>
-<p>066  给sap提供远程监控的</p>
-<p><strong>集团800、810、811、812为IDES标准集团</strong></p>
-<p>800 IDES-ALE: Central FI Syst Frankfurt - Deutschland</p>
-<p>810 IDES-ALE: Sales System   Barcelona - Spanien</p>
-<p>811 IDES-ALE: Production     Porto - Portugal</p>
-<p>812 IDES-ALE: Warehouse      Dallas, USA</p>
+    <content type="html"><![CDATA[<p>通过函数从表中读取长文本信息，例如物料、采购订单等。<br><a id="more"></a></p>
+<blockquote>
+<p>SE16：STXH  STXL  物料长文本、采购文本</p>
+<p>SE37：READ_TEXT</p>
+</blockquote>
+<p>另外还可以使用BAPI上载物料长文本：</p>
+<blockquote>
+<p>SE37：BAPI_MATERIAL_SAVEDATA</p>
+<p>Table：MATERIALLONGTEXT</p>
+<p>TEXT_ID=GRUN：Material long text</p>
+<p>TEXT_ID=BEST：PO long text.</p>
+</blockquote>
 ]]></content>
     
     <summary type="html">
     
-      &lt;p&gt;sap ides中包含了很多个client，并且提供了多个默认的用户名和密码。&lt;br&gt;
+      &lt;p&gt;通过函数从表中读取长文本信息，例如物料、采购订单等。&lt;br&gt;
     
     </summary>
     
       <category term="技术文章" scheme="http://www.qifeiba.com/categories/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/"/>
     
-      <category term="sap" scheme="http://www.qifeiba.com/categories/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/sap/"/>
+      <category term="SAP" scheme="http://www.qifeiba.com/categories/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/SAP/"/>
+    
+      <category term="ABAP" scheme="http://www.qifeiba.com/categories/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/SAP/ABAP/"/>
     
     
-      <category term="IDES" scheme="http://www.qifeiba.com/tags/IDES/"/>
-    
-      <category term="小技巧" scheme="http://www.qifeiba.com/tags/%E5%B0%8F%E6%8A%80%E5%B7%A7/"/>
+      <category term="table" scheme="http://www.qifeiba.com/tags/table/"/>
     
   </entry>
   
@@ -181,7 +981,7 @@
     <link href="http://www.qifeiba.com/2017/07/08/SAP%E6%89%B9%E6%AC%A1%E7%AE%A1%E7%90%86%E7%94%B1%E7%89%A9%E6%96%99%E7%BA%A7%E5%88%AB%E8%BD%AC%E6%8D%A2%E5%88%B0%E5%B7%A5%E5%8E%82%E7%BA%A7%E5%88%AB%E7%9A%84%E6%96%B9%E6%B3%95/"/>
     <id>http://www.qifeiba.com/2017/07/08/SAP批次管理由物料级别转换到工厂级别的方法/</id>
     <published>2017-07-08T01:08:35.000Z</published>
-    <updated>2017-07-08T09:25:33.037Z</updated>
+    <updated>2017-07-14T10:11:03.126Z</updated>
     
     <content type="html"><![CDATA[<p>SAP物料批次管理的级别共分为三个不同且不能并存的级别，由高至低分别为：client level/集团级别、material level/物料级别、plant level/工厂级别。在SAP提供的标准功能下，批次级别的调整只能由低向高转换：工厂级别–&gt;物料级别–&gt;集团级别。SAP提供的出厂状态应该是工厂级别，如果想转为物料级别，很容易做到，但需要慎重考虑，因为再想调回来就比较难了。这里提供的方法就是由物料级别向工厂级别转换的方法，方法来自SAP Notes:<br><a id="more"></a></p>
 <p><strong>Note 41715 - Resetting batch level from material to plant level</strong></p>
@@ -225,50 +1025,52 @@
     
       <category term="技术文章" scheme="http://www.qifeiba.com/categories/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/"/>
     
-      <category term="sap" scheme="http://www.qifeiba.com/categories/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/sap/"/>
+      <category term="SAP" scheme="http://www.qifeiba.com/categories/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/SAP/"/>
     
+      <category term="MM" scheme="http://www.qifeiba.com/categories/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/SAP/MM/"/>
     
-      <category term="MM" scheme="http://www.qifeiba.com/tags/MM/"/>
     
       <category term="批次管理" scheme="http://www.qifeiba.com/tags/%E6%89%B9%E6%AC%A1%E7%AE%A1%E7%90%86/"/>
     
   </entry>
   
   <entry>
-    <title>获取长文本的方法</title>
-    <link href="http://www.qifeiba.com/2017/07/08/%E8%8E%B7%E5%8F%96%E9%95%BF%E6%96%87%E6%9C%AC%E7%9A%84%E6%96%B9%E6%B3%95/"/>
-    <id>http://www.qifeiba.com/2017/07/08/获取长文本的方法/</id>
+    <title>SAP ECC6.0 IDES中client及用户名</title>
+    <link href="http://www.qifeiba.com/2017/07/08/SAP%20ECC6.0%20IDES%E5%90%84client%E5%8F%8A%E7%94%A8%E6%88%B7%E5%90%8D/"/>
+    <id>http://www.qifeiba.com/2017/07/08/SAP ECC6.0 IDES各client及用户名/</id>
     <published>2017-07-08T01:08:35.000Z</published>
-    <updated>2017-07-08T09:42:51.022Z</updated>
+    <updated>2017-07-14T10:05:14.519Z</updated>
     
-    <content type="html"><![CDATA[<p>通过函数从表中读取长文本信息，例如物料、采购订单等。<br><a id="more"></a></p>
-<blockquote>
-<p>SE16：STXH  STXL  物料长文本、采购文本</p>
-<p>SE37：READ_TEXT</p>
-</blockquote>
-<p>另外还可以使用BAPI上载物料长文本：</p>
-<blockquote>
-<p>SE37：BAPI_MATERIAL_SAVEDATA</p>
-<p>Table：MATERIALLONGTEXT</p>
-<p>TEXT_ID=GRUN：Material long text</p>
-<p>TEXT_ID=BEST：PO long text.</p>
-</blockquote>
+    <content type="html"><![CDATA[<p>sap ides中包含了很多个client，并且提供了多个默认的用户名和密码。<br><a id="more"></a></p>
+<h3 id="用户名及密码"><a href="#用户名及密码" class="headerlink" title="用户名及密码"></a>用户名及密码</h3><p>In client 000, 001, 066, 800 user SAP* has the password 06071992. </p>
+<p>In client 000, 001, 800 user DDIC has the password 19920706. </p>
+<p>User SAPCPIC in client 000 has the password ADMIN. </p>
+<p>User EARLYWATCH in client 066 has the password SUPPORT. </p>
+<h3 id="IDES中Client用途"><a href="#IDES中Client用途" class="headerlink" title="IDES中Client用途"></a>IDES中Client用途</h3><p><strong>集团000、001、066为SAP标准集团</strong></p>
+<p>000  sap reference client , 配传输路径或者升级等</p>
+<p>001  sap sample client</p>
+<p>066  给sap提供远程监控的</p>
+<p><strong>集团800、810、811、812为IDES标准集团</strong></p>
+<p>800 IDES-ALE: Central FI Syst Frankfurt - Deutschland</p>
+<p>810 IDES-ALE: Sales System   Barcelona - Spanien</p>
+<p>811 IDES-ALE: Production     Porto - Portugal</p>
+<p>812 IDES-ALE: Warehouse      Dallas, USA</p>
 ]]></content>
     
     <summary type="html">
     
-      &lt;p&gt;通过函数从表中读取长文本信息，例如物料、采购订单等。&lt;br&gt;
+      &lt;p&gt;sap ides中包含了很多个client，并且提供了多个默认的用户名和密码。&lt;br&gt;
     
     </summary>
     
       <category term="技术文章" scheme="http://www.qifeiba.com/categories/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/"/>
     
-      <category term="sap" scheme="http://www.qifeiba.com/categories/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/sap/"/>
+      <category term="SAP" scheme="http://www.qifeiba.com/categories/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/SAP/"/>
     
     
-      <category term="table" scheme="http://www.qifeiba.com/tags/table/"/>
+      <category term="IDES" scheme="http://www.qifeiba.com/tags/IDES/"/>
     
-      <category term="abap" scheme="http://www.qifeiba.com/tags/abap/"/>
+      <category term="小技巧" scheme="http://www.qifeiba.com/tags/%E5%B0%8F%E6%8A%80%E5%B7%A7/"/>
     
   </entry>
   
@@ -305,7 +1107,7 @@
     <link href="http://www.qifeiba.com/2017/07/07/SAP%E5%BA%93%E5%AD%98%E5%8E%86%E5%8F%B2%E5%BA%93%E5%AD%98%E8%A1%A8%E6%9B%B4%E6%96%B0%E9%80%BB%E8%BE%91/"/>
     <id>http://www.qifeiba.com/2017/07/07/SAP库存历史库存表更新逻辑/</id>
     <published>2017-07-07T01:08:35.000Z</published>
-    <updated>2017-07-08T09:55:00.042Z</updated>
+    <updated>2017-07-14T10:10:54.167Z</updated>
     
     <content type="html"><![CDATA[<p>记录一下常见库存表及更新逻辑。<br><a id="more"></a></p>
 <table>
@@ -412,10 +1214,10 @@
     
       <category term="技术文章" scheme="http://www.qifeiba.com/categories/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/"/>
     
-      <category term="sap" scheme="http://www.qifeiba.com/categories/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/sap/"/>
+      <category term="SAP" scheme="http://www.qifeiba.com/categories/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/SAP/"/>
     
+      <category term="MM" scheme="http://www.qifeiba.com/categories/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/SAP/MM/"/>
     
-      <category term="MM" scheme="http://www.qifeiba.com/tags/MM/"/>
     
       <category term="库存查询" scheme="http://www.qifeiba.com/tags/%E5%BA%93%E5%AD%98%E6%9F%A5%E8%AF%A2/"/>
     
@@ -474,11 +1276,60 @@ url = https://github.com/xuzhezhaozhao/Cplusplus-Primer-Plus-6thE-Code-Example.g
   </entry>
   
   <entry>
+    <title>查询103移动类型产生的冻结库存信息(GR Block Stock)</title>
+    <link href="http://www.qifeiba.com/2017/07/06/%E6%9F%A5%E8%AF%A2%E7%A7%BB%E5%8A%A8%E7%B1%BB%E5%9E%8B103%E4%BA%A7%E7%94%9F%E7%9A%84%E5%86%BB%E7%BB%93%E5%BA%93%E5%AD%98%E4%BF%A1%E6%81%AF(GR%20Block%20Stock)/"/>
+    <id>http://www.qifeiba.com/2017/07/06/查询移动类型103产生的冻结库存信息(GR Block Stock)/</id>
+    <published>2017-07-06T01:08:35.000Z</published>
+    <updated>2017-07-14T10:10:40.085Z</updated>
+    
+    <content type="html"><![CDATA[<p>最近项目上由于新旧系统切换，需要查询旧系统中GR Block Stock库存情况，因此略微研究并补充了一下查询方法及相关知识，分享一下。<br><a id="more"></a></p>
+<p>方法一：使用MMBE查询</p>
+<blockquote>
+<p>不足：只能单个物料查询</p>
+</blockquote>
+<p>方法二：使用ME2N等采购订单报表查询</p>
+<blockquote>
+<p>要点：选择参数中需要使用“WE104”，然后将结果在表EKBE中取得相关数据再进行计算</p>
+</blockquote>
+<p><img src="http://blog.itpub.net/attachment/201707/6/8596059_1499309590DglH.png" alt=""></p>
+<p>另外有一些延伸：</p>
+<ol>
+<li><p>如果是移动类型产生107的valuated GR blocked stock (一般用于票到货未到的情况), 可以在 MARC table. MARC - BWESB中查询到库存信息，或者通过<code>标准报表MB5OA</code>查询。</p>
+</li>
+<li><p>如果是移动类型103产生的GR blocked stock，系统将不会更新MARD table（<code>因为MARD在更新时要求有库存地点信息，而103移动类型中不带有，所以在MARD表中可以查询到因质量冻结的库存信息</code>）。Here, you have to find the 103 movements (quantity) pending for 105 movement from MSEG or EKBE table. In short, for a PO line item, you can find the difference in quantity between 105 and 103 movement from EKBE. This will give you the GR blocked stock. (Please consider the reversals also). The info is available in MMBE report too.</p>
+</li>
+<li><p>As of my knowledge, “to be delivered” quantity showing in ME2N report is through hard coded logic. If you dont want to consider 103 movement as delivered quantity, you may copy the program of ME2N to a z program and do the required modification or create a new z report with required logic.</p>
+</li>
+<li><p>If you want to show it in ME2N itself, I would suggest to add a new field to the report by appending the structure MEREP_OUTTAB_PURCHDOC, and write the logic accordingly to excluse 103 from EKBE or MSEG table.</p>
+</li>
+<li><p>The selection parameters are used to restrict / select the required PO’s in the output. If you want to show a report with PO of open for GR (103 done, 105 not done in your case, maintain the selection parameter as shown below, in the path OLME-Reporting - maintain purchasing list - selection parameters - Define selection parameters:<br><img src="http://blog.itpub.net/attachment/201707/6/8596059_1499309603SFN9.png" alt=""></p>
+</li>
+</ol>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;最近项目上由于新旧系统切换，需要查询旧系统中GR Block Stock库存情况，因此略微研究并补充了一下查询方法及相关知识，分享一下。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="技术文章" scheme="http://www.qifeiba.com/categories/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/"/>
+    
+      <category term="SAP" scheme="http://www.qifeiba.com/categories/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/SAP/"/>
+    
+      <category term="MM" scheme="http://www.qifeiba.com/categories/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/SAP/MM/"/>
+    
+    
+      <category term="库存查询" scheme="http://www.qifeiba.com/tags/%E5%BA%93%E5%AD%98%E6%9F%A5%E8%AF%A2/"/>
+    
+  </entry>
+  
+  <entry>
     <title>如何高效使用Tcode</title>
     <link href="http://www.qifeiba.com/2017/07/06/%E5%A6%82%E4%BD%95%E9%AB%98%E6%95%88%E4%BD%BF%E7%94%A8Tcode/"/>
     <id>http://www.qifeiba.com/2017/07/06/如何高效使用Tcode/</id>
     <published>2017-07-06T01:08:35.000Z</published>
-    <updated>2017-07-08T09:23:23.358Z</updated>
+    <updated>2017-07-14T10:09:20.768Z</updated>
     
     <content type="html"><![CDATA[<p>命令框在哪儿就不用多说了，这里说说这个框内如何高效使用Tcode。<br><a id="more"></a></p>
 <p><strong>1. 使用“/n”</strong></p>
@@ -518,61 +1369,12 @@ url = https://github.com/xuzhezhaozhao/Cplusplus-Primer-Plus-6thE-Code-Example.g
     
       <category term="技术文章" scheme="http://www.qifeiba.com/categories/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/"/>
     
-      <category term="sap" scheme="http://www.qifeiba.com/categories/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/sap/"/>
+      <category term="SAP" scheme="http://www.qifeiba.com/categories/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/SAP/"/>
     
     
       <category term="小技巧" scheme="http://www.qifeiba.com/tags/%E5%B0%8F%E6%8A%80%E5%B7%A7/"/>
     
       <category term="TCODE" scheme="http://www.qifeiba.com/tags/TCODE/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>查询103移动类型产生的冻结库存信息(GR Block Stock)</title>
-    <link href="http://www.qifeiba.com/2017/07/06/%E6%9F%A5%E8%AF%A2%E7%A7%BB%E5%8A%A8%E7%B1%BB%E5%9E%8B103%E4%BA%A7%E7%94%9F%E7%9A%84%E5%86%BB%E7%BB%93%E5%BA%93%E5%AD%98%E4%BF%A1%E6%81%AF(GR%20Block%20Stock)/"/>
-    <id>http://www.qifeiba.com/2017/07/06/查询移动类型103产生的冻结库存信息(GR Block Stock)/</id>
-    <published>2017-07-06T01:08:35.000Z</published>
-    <updated>2017-07-08T00:06:53.726Z</updated>
-    
-    <content type="html"><![CDATA[<p>最近项目上由于新旧系统切换，需要查询旧系统中GR Block Stock库存情况，因此略微研究并补充了一下查询方法及相关知识，分享一下。<br><a id="more"></a></p>
-<p>方法一：使用MMBE查询</p>
-<blockquote>
-<p>不足：只能单个物料查询</p>
-</blockquote>
-<p>方法二：使用ME2N等采购订单报表查询</p>
-<blockquote>
-<p>要点：选择参数中需要使用“WE104”，然后将结果在表EKBE中取得相关数据再进行计算</p>
-</blockquote>
-<p><img src="http://blog.itpub.net/attachment/201707/6/8596059_1499309590DglH.png" alt=""></p>
-<p>另外有一些延伸：</p>
-<ol>
-<li><p>如果是移动类型产生107的valuated GR blocked stock (一般用于票到货未到的情况), 可以在 MARC table. MARC - BWESB中查询到库存信息，或者通过<code>标准报表MB5OA</code>查询。</p>
-</li>
-<li><p>如果是移动类型103产生的GR blocked stock，系统将不会更新MARD table（<code>因为MARD在更新时要求有库存地点信息，而103移动类型中不带有，所以在MARD表中可以查询到因质量冻结的库存信息</code>）。Here, you have to find the 103 movements (quantity) pending for 105 movement from MSEG or EKBE table. In short, for a PO line item, you can find the difference in quantity between 105 and 103 movement from EKBE. This will give you the GR blocked stock. (Please consider the reversals also). The info is available in MMBE report too.</p>
-</li>
-<li><p>As of my knowledge, “to be delivered” quantity showing in ME2N report is through hard coded logic. If you dont want to consider 103 movement as delivered quantity, you may copy the program of ME2N to a z program and do the required modification or create a new z report with required logic.</p>
-</li>
-<li><p>If you want to show it in ME2N itself, I would suggest to add a new field to the report by appending the structure MEREP_OUTTAB_PURCHDOC, and write the logic accordingly to excluse 103 from EKBE or MSEG table.</p>
-</li>
-<li><p>The selection parameters are used to restrict / select the required PO’s in the output. If you want to show a report with PO of open for GR (103 done, 105 not done in your case, maintain the selection parameter as shown below, in the path OLME-Reporting - maintain purchasing list - selection parameters - Define selection parameters:<br><img src="http://blog.itpub.net/attachment/201707/6/8596059_1499309603SFN9.png" alt=""></p>
-</li>
-</ol>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;最近项目上由于新旧系统切换，需要查询旧系统中GR Block Stock库存情况，因此略微研究并补充了一下查询方法及相关知识，分享一下。&lt;br&gt;
-    
-    </summary>
-    
-      <category term="技术文章" scheme="http://www.qifeiba.com/categories/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/"/>
-    
-      <category term="sap" scheme="http://www.qifeiba.com/categories/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/sap/"/>
-    
-    
-      <category term="MM" scheme="http://www.qifeiba.com/tags/MM/"/>
-    
-      <category term="库存查询" scheme="http://www.qifeiba.com/tags/%E5%BA%93%E5%AD%98%E6%9F%A5%E8%AF%A2/"/>
     
   </entry>
   
